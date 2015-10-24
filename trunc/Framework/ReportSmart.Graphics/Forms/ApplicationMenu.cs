@@ -34,15 +34,18 @@ using ReportSmart.Special.WinApi;
 
 namespace ReportSmart.Forms
 {
-    public class ApplicationMenu {
-				public IntPtr MenuHandle { get; protected set; }
-				
-				public void AppendItem(string aText) {
-						libUser32.AppendMenu(MenuHandle, libUser32.BYPOSITION, 12345, aText);
-					}
-		
-				public ApplicationMenu(Form aForm) {
-						MenuHandle = libUser32.GetSystemMenu(aForm.Handle);
-					}
-			}
-	}
+    public class ApplicationMenu
+    {
+        public IntPtr MenuHandle { get; protected set; }
+
+        public void AppendItem(string aText)
+        {
+            libUser32.AppendMenu(MenuHandle, libUser32.BYPOSITION, 12345, aText);
+        }
+
+        public ApplicationMenu(Form aForm)
+        {
+            MenuHandle = libUser32.GetSystemMenu(aForm.Handle);
+        }
+    }
+}

@@ -41,46 +41,50 @@ namespace ReportSmart
     /// <summary>
     /// Class with program entry point.
     /// </summary>
-    internal sealed class Program {
-		#if DEMO
+    internal sealed class Program
+    {
+#if DEMO
 		private const int _YM     = 140;
 		private const int _MM     =  38;
 		private const int _DM     =   6;
 		private const int _PERIOD =  30;
-		#endif
-	
-		/// <summary>
-		/// Program entry point.
-		/// </summary>
-		/// 
-		
-		[STAThread]
-		private static void Main(string[] args) {		
-			System.Windows.Forms.Application.EnableVisualStyles();
-			System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(true);
-			
-			if (!CEmbeddedApplication.IsEmbeddedApplication(args)) {			
-					RsViewEngine.InitializeCore();
-					RsViewEngine.InitializeApplication();
-					
-					string lRpt = "";
-				
-					// Argument processing:
-					for (int i = 0; i < args.Length; i++) {
-							if (args[i] == "-o" || args[i] == "--open")
-									lRpt = args.Length > i+1 ? args[i+1] : "";
-						}
+#endif
 
-					#if DEBUG
-					#warning RS View: DEBUG build
-					ReportSmart.Controls.CRSMessageBox.ShowBox("ReportSmart View now running in DEBUG mode.", "Debug");
-					#elif (DEMO)
-					#warning RS View: DEMO build
-					#else
-					#warning RS View: RELEASE build
-					#endif
-					
-					#if DEMO
+        /// <summary>
+        /// Program entry point.
+        /// </summary>
+        /// 
+
+        [STAThread]
+        private static void Main(string[] args)
+        {
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(true);
+
+            if (!CEmbeddedApplication.IsEmbeddedApplication(args))
+            {
+                RsViewEngine.InitializeCore();
+                RsViewEngine.InitializeApplication();
+
+                string lRpt = "";
+
+                // Argument processing:
+                for (int i = 0; i < args.Length; i++)
+                {
+                    if (args[i] == "-o" || args[i] == "--open")
+                        lRpt = args.Length > i + 1 ? args[i + 1] : "";
+                }
+
+#if DEBUG
+#warning RS View: DEBUG build
+                ReportSmart.Controls.CRSMessageBox.ShowBox("ReportSmart View now running in DEBUG mode.", "Debug");
+#elif (DEMO)
+#warning RS View: DEMO build
+#else
+#warning RS View: RELEASE build
+#endif
+
+#if DEMO
 					try {
 							string lProjID = RsViewEngine.GetProjectID();
 							
@@ -97,32 +101,34 @@ namespace ReportSmart
 						} catch {
 							RsViewEngine.KillApplication();
 						}
-					#endif
-					
-					if (lRpt != "")
-							RsViewEngine.MainForm.OpenReport(FileSystem.NameOf(lRpt), lRpt);
-					
-					System.Windows.Forms.Application.Run(RsViewEngine.MainForm);					
-					
-				} else {
-					CEmbeddedApplication lEmbApp = new CEmbeddedApplication(args[1]);
-					RsViewEngine.InitializeCore();
-					RsViewEngine.InitializeEmbedded(lEmbApp);
-					CRSReportViewerEmbedded lViewer = new CRSReportViewerEmbedded();
-					lViewer.EmbeddedApplication = lEmbApp;
-					lViewer.ReportFile = args[2];
-					lViewer.ReportTitle = args[3];
-					lViewer.Location = new System.Drawing.Point(0, 0);
-					lViewer.Size = new System.Drawing.Size(640, 480);
-					lViewer.Anchor = (AnchorStyles)(AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom);
-					lViewer.EmbeddedApplication.IntegrateControl(lViewer);
-					Messaging.SendMessage(lViewer.EmbeddedApplication.Handle, Messaging.WM_REGISTERME, (uint)lViewer.Handle, 0);
-					lViewer.OpenReport();
-					System.Windows.Forms.Application.ApplicationExit += new EventHandler(RsViewEngine.EH_ApplicationExit);
-					System.Windows.Forms.Application.Run();
-				}
+#endif
 
-		}
-		
-	}
+                if (lRpt != "")
+                    RsViewEngine.MainForm.OpenReport(FileSystem.NameOf(lRpt), lRpt);
+
+                System.Windows.Forms.Application.Run(RsViewEngine.MainForm);
+
+            }
+            else
+            {
+                CEmbeddedApplication lEmbApp = new CEmbeddedApplication(args[1]);
+                RsViewEngine.InitializeCore();
+                RsViewEngine.InitializeEmbedded(lEmbApp);
+                CRSReportViewerEmbedded lViewer = new CRSReportViewerEmbedded();
+                lViewer.EmbeddedApplication = lEmbApp;
+                lViewer.ReportFile = args[2];
+                lViewer.ReportTitle = args[3];
+                lViewer.Location = new System.Drawing.Point(0, 0);
+                lViewer.Size = new System.Drawing.Size(640, 480);
+                lViewer.Anchor = (AnchorStyles)(AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom);
+                lViewer.EmbeddedApplication.IntegrateControl(lViewer);
+                Messaging.SendMessage(lViewer.EmbeddedApplication.Handle, Messaging.WM_REGISTERME, (uint)lViewer.Handle, 0);
+                lViewer.OpenReport();
+                System.Windows.Forms.Application.ApplicationExit += new EventHandler(RsViewEngine.EH_ApplicationExit);
+                System.Windows.Forms.Application.Run();
+            }
+
+        }
+
+    }
 }

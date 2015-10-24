@@ -16,7 +16,7 @@
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <FileUpgradeFlags>40</FileUpgradeFlags>
-    <UpgradeBackupLocation>D:\repo\ReportSmart\trunc\Backup1\</UpgradeBackupLocation>
+    <UpgradeBackupLocation>D:\repo\ReportSmart\trunc\Backup\</UpgradeBackupLocation>
     <OldToolsVersion>14.0</OldToolsVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>

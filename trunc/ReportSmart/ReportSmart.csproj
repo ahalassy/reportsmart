@@ -6,7 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ReportSmart.Application</RootNamespace>
-    <ApplicationIcon>ReportSmartApp.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
     <WarningLevel>4</WarningLevel>

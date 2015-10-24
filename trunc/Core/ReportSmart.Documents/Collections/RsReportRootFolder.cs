@@ -32,17 +32,20 @@
 
 namespace ReportSmart.Documents.Collections
 {
-    public class CReportRootFolder: CReportFolder {
-				public new RsReportCollection Collection {
-						get { return GetCollection(); }
-						set { SetCollection(value); }
-					}
-		
-				public CReportRootFolder(string aName, RsReportCollection aCollection): base(aName) {
-						GUINode.ImageIndex = 3;
-						GUINode.SelectedImageIndex = 3;
-				
-						SetCollection(aCollection);
-					}
-			}
-	}
+    public class CReportRootFolder : CReportFolder
+    {
+        public new RsReportCollection Collection
+        {
+            get { return GetCollection(); }
+            set { SetCollection(value); }
+        }
+
+        public CReportRootFolder(string aName, RsReportCollection aCollection) : base(aName)
+        {
+            GUINode.ImageIndex = 3;
+            GUINode.SelectedImageIndex = 3;
+
+            SetCollection(aCollection);
+        }
+    }
+}

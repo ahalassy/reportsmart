@@ -35,24 +35,28 @@ using ReportSmart.Special.WinApi;
 
 namespace ReportSmart.Special
 {
-    public static class WindowHelper {
- 		
- 				#region STATIC:
- 				#region class SystemMetrics
- 				public static class SystemMetrics {
- 						public static int GetwindowEdgeWidth() {
- 								return libUser32.GetSystemMetrics(libUser32.SM_CXEDGE);
- 							}
- 					}
- 				#endregion
- 				
- 				#region PUBLIC METHODS:
-				public static bool IsThereWindow(string aTitle) {
-						return libUser32.FindWindow(null, aTitle) != IntPtr.Zero;
-					}
-					
- 				#endregion
- 				#endregion
- 				//--------------------------------------------------------------------------------------------------------------
- 			}
- 	}
+    public static class WindowHelper
+    {
+
+        #region STATIC:
+        #region class SystemMetrics
+        public static class SystemMetrics
+        {
+            public static int GetwindowEdgeWidth()
+            {
+                return libUser32.GetSystemMetrics(libUser32.SM_CXEDGE);
+            }
+        }
+        #endregion
+
+        #region PUBLIC METHODS:
+        public static bool IsThereWindow(string aTitle)
+        {
+            return libUser32.FindWindow(null, aTitle) != IntPtr.Zero;
+        }
+
+        #endregion
+        #endregion
+        //--------------------------------------------------------------------------------------------------------------
+    }
+}

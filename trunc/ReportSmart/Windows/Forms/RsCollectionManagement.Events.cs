@@ -38,37 +38,45 @@ using ReportSmart.Localization;
 
 namespace ReportSmart.Windows.Forms
 {
-    public partial class RsCollectionManagement: Panel, ILocalizedControl {
-		
-				protected void AssignEventHandlers() {
-						CollectionBrowser.CollectionNodeSelected += new NodeSelectedEvent(ehSelectNode);
-						
-						ItemList.DoubleClick += new EventHandler(ehOpenNode);
-					}
-		
-				protected void ehOpenNode(object aSender, EventArgs aE) {
-						foreach (RsListViewItem iItem in ItemList.SelectedItems) {				
-								if (iItem.IsReportFile()) {
-										CReportFile lFile = iItem.ReportItem as CReportFile;
-								
-										RsViewEngine.MainForm.OpenReport(lFile.ItemName, lFile.ReportFile);
-									}
-							}
-					}
-		
-				protected void ehSelectNode(RsCollectionTree aSender, RsCollectionTreeNode aNode) {
-						if (ItemList.Items != null)
-								ItemList.Items.Clear();
-					
-						if (aNode != null && aNode.CollectionItem is RsCollectionFolder) {
-								RsCollectionFolder lFolder = aNode.CollectionItem as RsCollectionFolder;
-						
-								List<RsCollectionItem> lItems = lFolder.GetSubItems();
-								foreach (RsCollectionItem iItem in lItems) {
-										ItemList.Items.Add(new RsListViewItem(iItem));
-									}
-							}
-					}
-		
-			}
-	}
+    public partial class RsCollectionManagement : Panel, ILocalizedControl
+    {
+
+        protected void AssignEventHandlers()
+        {
+            CollectionBrowser.CollectionNodeSelected += new NodeSelectedEvent(ehSelectNode);
+
+            ItemList.DoubleClick += new EventHandler(ehOpenNode);
+        }
+
+        protected void ehOpenNode(object aSender, EventArgs aE)
+        {
+            foreach (RsListViewItem iItem in ItemList.SelectedItems)
+            {
+                if (iItem.IsReportFile())
+                {
+                    CReportFile lFile = iItem.ReportItem as CReportFile;
+
+                    RsViewEngine.MainForm.OpenReport(lFile.ItemName, lFile.ReportFile);
+                }
+            }
+        }
+
+        protected void ehSelectNode(RsCollectionTree aSender, RsCollectionTreeNode aNode)
+        {
+            if (ItemList.Items != null)
+                ItemList.Items.Clear();
+
+            if (aNode != null && aNode.CollectionItem is RsCollectionFolder)
+            {
+                RsCollectionFolder lFolder = aNode.CollectionItem as RsCollectionFolder;
+
+                List<RsCollectionItem> lItems = lFolder.GetSubItems();
+                foreach (RsCollectionItem iItem in lItems)
+                {
+                    ItemList.Items.Add(new RsListViewItem(iItem));
+                }
+            }
+        }
+
+    }
+}

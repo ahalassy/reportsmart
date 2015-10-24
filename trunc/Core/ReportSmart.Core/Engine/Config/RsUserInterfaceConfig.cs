@@ -35,13 +35,15 @@ namespace ReportSmart.Engine.Config
 {
 
     [XmlTypeAttribute(TypeName = "userinterface")]
-		public class RsUserInterfaceConfig {
-		
-				[XmlElementAttribute(ElementName = "window")]
-				public RsWindowConfig WindowConfig;
-		
-				public RsUserInterfaceConfig() {
-						WindowConfig = new RsWindowConfig();
-					}
-			}
-	}
+    public class RsUserInterfaceConfig
+    {
+
+        [XmlElementAttribute(ElementName = "window")]
+        public RsWindowConfig WindowConfig;
+
+        public RsUserInterfaceConfig()
+        {
+            WindowConfig = new RsWindowConfig();
+        }
+    }
+}

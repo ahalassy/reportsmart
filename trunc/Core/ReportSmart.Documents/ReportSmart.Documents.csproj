@@ -92,7 +92,7 @@
       <Project>{73A4D166-6D81-4EF8-AFAA-45A42C56CF32}</Project>
       <Name>ReportSmart.Security</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\CB CodeBase\CB-201012-02 Halassy.Security\cv\.source\Halassy.Security\Halassy.Security.csproj">
+    <ProjectReference Include="..\..\Framework\ReportSmart.Security\ReportSmart.Security.csproj">
       <Project>{73A4D166-6D81-4EF8-AFAA-45A42C56CF32}</Project>
       <Name>Halassy.Security</Name>
     </ProjectReference>

@@ -32,13 +32,14 @@
 
 namespace ReportSmart.Classes
 {
-    internal interface IItemClass {
-				string toString();
+    internal interface IItemClass
+    {
+        string toString();
 
-				string Name {get;}
-				string InstanceName{get; }
-				
-				int compareWith(IItemClass aItem);
-			}
-	}
+        string Name { get; }
+        string InstanceName { get; }
+
+        int compareWith(IItemClass aItem);
+    }
+}
 

@@ -36,16 +36,19 @@ using ReportSmart.Application;
 
 namespace ReportSmart.Documents.Collections
 {
-    internal class CReportFavoritesRoot: CReportRootFolder {
-				protected override void setItemName(string aName) {
-						base.setItemName(aName);
-						GUINode.Text = RsViewEngine.Locale.GetTagText(RsLocalization.TAG_FAVORITES);
-					}
-		
-				public CReportFavoritesRoot(string aName, RsReportCollection aCollection): base(aName, aCollection) {
-						GUINode.ImageIndex = 2;
-						GUINode.SelectedImageIndex = 2;
-						GUINode.Text = RsViewEngine.Locale.GetTagText(RsLocalization.TAG_FAVORITES);
-					}
-			}
-	}
+    internal class CReportFavoritesRoot : CReportRootFolder
+    {
+        protected override void setItemName(string aName)
+        {
+            base.setItemName(aName);
+            GUINode.Text = RsViewEngine.Locale.GetTagText(RsLocalization.TAG_FAVORITES);
+        }
+
+        public CReportFavoritesRoot(string aName, RsReportCollection aCollection) : base(aName, aCollection)
+        {
+            GUINode.ImageIndex = 2;
+            GUINode.SelectedImageIndex = 2;
+            GUINode.Text = RsViewEngine.Locale.GetTagText(RsLocalization.TAG_FAVORITES);
+        }
+    }
+}

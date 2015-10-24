@@ -37,30 +37,32 @@ namespace ReportSmart.Engine.Config
     /// Description of RsSettings.
     /// </summary>
 
-    [XmlTypeAttribute(TypeName="settings")]
-		public class RsSettingsConfig {
-		
-				[XmlElementAttribute(ElementName = "locale")]
-				public RsLocaleConfig Locale;
-		
-				[XmlElementAttribute(ElementName = "userinterface")]
-				public RsUserInterfaceConfig UserInterface { get; set; }
-				
-				[XmlElementAttribute(ElementName = "security")]
-				public RsSecurityConfig Security;
-				
-				[XmlElementAttribute(ElementName = "offline")]
-				public RsOfflineConfig Offline;
-				
-				[XmlElementAttribute(ElementName = "embeddedparamedit")]
-				public RsEmbeddedParamEditConfig EmbeddedParamEdit;
-		
-				public RsSettingsConfig() {
-						Locale = null;
-						UserInterface = new RsUserInterfaceConfig();
-						Security = null;
-						Offline = new RsOfflineConfig();
-						EmbeddedParamEdit = new RsEmbeddedParamEditConfig();
-					}
-			}
-	}
+    [XmlTypeAttribute(TypeName = "settings")]
+    public class RsSettingsConfig
+    {
+
+        [XmlElementAttribute(ElementName = "locale")]
+        public RsLocaleConfig Locale;
+
+        [XmlElementAttribute(ElementName = "userinterface")]
+        public RsUserInterfaceConfig UserInterface { get; set; }
+
+        [XmlElementAttribute(ElementName = "security")]
+        public RsSecurityConfig Security;
+
+        [XmlElementAttribute(ElementName = "offline")]
+        public RsOfflineConfig Offline;
+
+        [XmlElementAttribute(ElementName = "embeddedparamedit")]
+        public RsEmbeddedParamEditConfig EmbeddedParamEdit;
+
+        public RsSettingsConfig()
+        {
+            Locale = null;
+            UserInterface = new RsUserInterfaceConfig();
+            Security = null;
+            Offline = new RsOfflineConfig();
+            EmbeddedParamEdit = new RsEmbeddedParamEditConfig();
+        }
+    }
+}

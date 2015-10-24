@@ -36,23 +36,25 @@ using System.Xml.Serialization;
 namespace ReportSmart.Engine.Config
 {
 
-    [XmlRootAttribute(ElementName="ReportSmartSettings", IsNullable=false)]
-		public class RsProfileConfig {
-		
-				[XmlAttribute(AttributeName = "version", DataType = "string")]
-				public string Version { get; set; }
-				
-				[XmlAttribute(AttributeName = "configVersion", DataType = "int")]
-				public int ConfigVersion { get; set; }
-				
-				[XmlElementAttribute(ElementName = "settings")]
-				public RsSettingsConfig Settings { get; set; }
-				
-				public List<RsCollectionConfig> Collections;
-		
-				public RsProfileConfig() {
-						Collections = new List<RsCollectionConfig>();
-						ConfigVersion = 0;
-					}
-			}
-	}
+    [XmlRootAttribute(ElementName = "ReportSmartSettings", IsNullable = false)]
+    public class RsProfileConfig
+    {
+
+        [XmlAttribute(AttributeName = "version", DataType = "string")]
+        public string Version { get; set; }
+
+        [XmlAttribute(AttributeName = "configVersion", DataType = "int")]
+        public int ConfigVersion { get; set; }
+
+        [XmlElementAttribute(ElementName = "settings")]
+        public RsSettingsConfig Settings { get; set; }
+
+        public List<RsCollectionConfig> Collections;
+
+        public RsProfileConfig()
+        {
+            Collections = new List<RsCollectionConfig>();
+            ConfigVersion = 0;
+        }
+    }
+}

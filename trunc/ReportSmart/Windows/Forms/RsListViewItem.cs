@@ -36,26 +36,32 @@ using ReportSmart.Localization;
 
 namespace ReportSmart.Windows.Forms
 {
-    public partial class RsCollectionManagement: Panel, ILocalizedControl {
-				
-				protected class RsListViewItem: ListViewItem {
-						public RsCollectionItem CollectionItem { get; protected set; }
-						
-						public CReportItem ReportItem {
-								get { return CollectionItem.ReportItem; }
-							}
-						
-						public bool IsReportFile() {
-								return ReportItem is CReportFile;
-							}
-							
-						public bool IsReportFolder() {
-								return ReportItem is CReportFolder;
-							}
-						
-						public RsListViewItem(RsCollectionItem aItem): base(aItem.ItemName) {
-								CollectionItem = aItem;
-							}
-					}
-			}
+    public partial class RsCollectionManagement : Panel, ILocalizedControl
+    {
+
+        protected class RsListViewItem : ListViewItem
+        {
+            public RsCollectionItem CollectionItem { get; protected set; }
+
+            public CReportItem ReportItem
+            {
+                get { return CollectionItem.ReportItem; }
+            }
+
+            public bool IsReportFile()
+            {
+                return ReportItem is CReportFile;
+            }
+
+            public bool IsReportFolder()
+            {
+                return ReportItem is CReportFolder;
+            }
+
+            public RsListViewItem(RsCollectionItem aItem) : base(aItem.ItemName)
+            {
+                CollectionItem = aItem;
+            }
+        }
+    }
 }

@@ -35,24 +35,27 @@ using System.Xml.Serialization;
 
 namespace ReportSmart.Engine.Config
 {
-    public enum RsCollectionType {
-				Custom,
-				Favorites,
-				History
-			}
+    public enum RsCollectionType
+    {
+        Custom,
+        Favorites,
+        History
+    }
 
-		[XmlType(TypeName = "collection")]
-		public class RsCollectionConfig: RsPathConfig {
-		
-				public bool IsCollectionExists() {
-						return File.Exists(Path);
-					}
-		
-				[XmlAttribute(AttributeName = "type")]
-				public RsCollectionType Type { get; set; }
-				
-				[XmlAttribute(AttributeName = "name")]
-				public string Name { get; set; }
+    [XmlType(TypeName = "collection")]
+    public class RsCollectionConfig : RsPathConfig
+    {
 
-			}
-	}
+        public bool IsCollectionExists()
+        {
+            return File.Exists(Path);
+        }
+
+        [XmlAttribute(AttributeName = "type")]
+        public RsCollectionType Type { get; set; }
+
+        [XmlAttribute(AttributeName = "name")]
+        public string Name { get; set; }
+
+    }
+}

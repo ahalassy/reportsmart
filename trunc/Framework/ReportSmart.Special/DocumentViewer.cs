@@ -33,35 +33,41 @@ using System.Windows.Forms;
 
 namespace ReportSmart.Special.DocumentView
 {
-    public abstract class CDocumentEngine {
+    public abstract class CDocumentEngine
+    {
 
-				private Control _DocControl;
-				
-				protected Control docControl {
-						get { return _DocControl; }
-						set { _DocControl = value; }
-					}
-				
-				public Control DocumentControl { get { return _DocControl; }}
-						
-				public abstract void LoadDocument(string aDocument);
-				public abstract bool IsOpenable();
-			}
-			
-		public class CPDFDocEngine: CDocumentEngine {		
-				public AxHost PDFControl { get { return (DocumentControl as AxHost); }}
-				
-				public override void LoadDocument(string aDocument) {
-						//System.	
-						
-						
-					}
+        private Control _DocControl;
 
-				public override bool IsOpenable() {
-						return true;
-					}
-			}
+        protected Control docControl
+        {
+            get { return _DocControl; }
+            set { _DocControl = value; }
+        }
 
-		public class CDocViewer {
-			}
-	}
+        public Control DocumentControl { get { return _DocControl; } }
+
+        public abstract void LoadDocument(string aDocument);
+        public abstract bool IsOpenable();
+    }
+
+    public class CPDFDocEngine : CDocumentEngine
+    {
+        public AxHost PDFControl { get { return (DocumentControl as AxHost); } }
+
+        public override void LoadDocument(string aDocument)
+        {
+            //System.	
+
+
+        }
+
+        public override bool IsOpenable()
+        {
+            return true;
+        }
+    }
+
+    public class CDocViewer
+    {
+    }
+}
