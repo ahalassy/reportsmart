@@ -2,7 +2,7 @@
  *
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.10.07.)
+ * Copyright: Adam ReportSmart (2009.10.07.)
  * 
  * Required sources:
  *   /Common/common-tools.cs
@@ -14,12 +14,12 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Controls;
-using Halassy.Graph;
-using Halassy.Graph.Drawing;
+using ReportSmart;
+using ReportSmart.Controls;
+using ReportSmart.Graph;
+using ReportSmart.Graph.Drawing;
 
-namespace Halassy.Forms {
+namespace ReportSmart.Forms {
 		public delegate void ToolItemAction(StripToolItem aSender);
 
 		public class CPagedToolStrip: Control {

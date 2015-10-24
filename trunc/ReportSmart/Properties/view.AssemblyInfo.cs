@@ -4,22 +4,19 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-using Halassy;
-//using Halassy.Authorization;
-using Halassy.Classes;
-using Halassy.Controls;
-using Halassy.Forms;
-using Halassy.Graph;
-using Halassy.Graph.Drawing;
-using Halassy.Localization;
-using Halassy.Network;
-using Halassy.Network.Email;
-using Halassy.Special;
-using Halassy.Special.WinApi;
-
 using ReportSmart;
-using ReportSmart.Application;
+//using ReportSmart.Authorization;
+using ReportSmart.Classes;
 using ReportSmart.Controls;
+using ReportSmart.Forms;
+using ReportSmart.Graph;
+using ReportSmart.Graph.Drawing;
+using ReportSmart.Localization;
+using ReportSmart.Network;
+using ReportSmart.Network.Email;
+using ReportSmart.Special;
+using ReportSmart.Special.WinApi;
+using ReportSmart.Application;
 using ReportSmart.Documents;
 using ReportSmart.Documents.Collections;
 
@@ -31,9 +28,9 @@ using ReportSmart.Documents.Collections;
 [assembly: AssemblyTitle("ReportSmart")]
 [assembly: AssemblyDescription("ReportSmart View")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Halassy Studio")]
+[assembly: AssemblyCompany("ReportSmart Studio")]
 [assembly: AssemblyProduct("ReportSmart")]
-[assembly: AssemblyCopyright("Adam halassy")]
+[assembly: AssemblyCopyright("Adam ReportSmart")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

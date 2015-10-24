@@ -1,9 +1,9 @@
 ﻿/*
  *
  * Licensing:			GPL
- * Original project:	Halassy.Graphics.csproj
+ * Original project:	ReportSmart.Graphics.csproj
  *
- * Copyright: Adam Halassy (2010.12.05.)
+ * Copyright: Adam ReportSmart (2010.12.05.)
  * 
  * 
  */
@@ -14,12 +14,12 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Controls;
-using Halassy.Graph;
-using Halassy.Graph.Drawing;
+using ReportSmart;
+using ReportSmart.Controls;
+using ReportSmart.Graph;
+using ReportSmart.Graph.Drawing;
 
-namespace Halassy.Forms {
+namespace ReportSmart.Forms {
 		public class StripToolPageset {
 				private CPagedToolStrip _Host;	
 				private ArrayList _List;

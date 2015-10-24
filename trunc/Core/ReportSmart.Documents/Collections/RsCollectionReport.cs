@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	RsDocuments.csproj
  *
- * Copyright: Adam Halassy (2010.12.18.)
+ * Copyright: Adam ReportSmart (2010.12.18.)
  * 
  * 
  */

@@ -1,20 +1,20 @@
 ﻿/*
  *
  * Licensing:			GPL
- * Original project:	Halassy.Graphics.csproj
+ * Original project:	ReportSmart.Graphics.csproj
  *
- * Copyright: Adam Halassy (2010.12.05.)
+ * Copyright: Adam ReportSmart (2010.12.05.)
  * 
  * 
  */
 using System;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Special;
-using Halassy.Special.WinApi;
+using ReportSmart;
+using ReportSmart.Special;
+using ReportSmart.Special.WinApi;
 
-namespace Halassy.Forms {
+namespace ReportSmart.Forms {
 		public class ApplicationMenu {
 				public IntPtr MenuHandle { get; protected set; }
 				

@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ReportSmart.Application</RootNamespace>
-    <ApplicationIcon>..\.gfx\iconset\ReportSmartApp.ico</ApplicationIcon>
+    <ApplicationIcon>ReportSmartApp.ico</ApplicationIcon>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
     <WarningLevel>4</WarningLevel>
@@ -99,6 +99,9 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug 2' ">
     <PostBuildEvent>md ..\.results
 ..\..\..\CurrentVersion\bin\buildEnvironment.bat &gt; ..\.results\envBuild.txt</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug 2|AnyCPU'">
+    <OutputPath>bin\Debug\</OutputPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
@@ -273,31 +276,31 @@
     </ProjectReference>
     <ProjectReference Include="..\Framework\ReportSmart.Network\ReportSmart.Network.csproj">
       <Project>{063C9875-0159-409F-831E-956F14ABA7F4}</Project>
-      <Name>Halassy.Network</Name>
+      <Name>ReportSmart.Network</Name>
     </ProjectReference>
     <ProjectReference Include="..\Framework\ReportSmart.Security\ReportSmart.Security.csproj">
       <Project>{73A4D166-6D81-4EF8-AFAA-45A42C56CF32}</Project>
-      <Name>Halassy.Security</Name>
+      <Name>ReportSmart.Security</Name>
     </ProjectReference>
     <ProjectReference Include="..\Framework\ReportSmart.Special\ReportSmart.Special.csproj">
       <Project>{7D980308-4AA1-4B64-8CAF-FFAFB86FF52D}</Project>
-      <Name>Halassy.Special</Name>
+      <Name>ReportSmart.Special</Name>
     </ProjectReference>
     <ProjectReference Include="..\Framework\ReportSmart.Graphics\ReportSmart.Graphics.csproj">
       <Project>{AD72311A-FB51-4963-95D9-90D9AEB560FB}</Project>
-      <Name>Halassy.Graphics</Name>
+      <Name>ReportSmart.Graphics</Name>
     </ProjectReference>
-    <ProjectReference Include="..\.source\RsControls\RsControls.csproj">
+    <ProjectReference Include="..\Core\ReportSmart.Controls\ReportSmart.Controls.csproj">
       <Project>{BA5D16DC-89AC-4FA4-AA4F-1052CAC2421D}</Project>
-      <Name>RsControls</Name>
+      <Name>ReportSmart.Controls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\.source\RsCore\RsCore.csproj">
+    <ProjectReference Include="..\Core\ReportSmart.Core\ReportSmart.Core.csproj">
       <Project>{03EF7F63-6724-4DE4-8978-73BE89C1AB4A}</Project>
-      <Name>RsCore</Name>
+      <Name>ReportSmart.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\.source\RsReportProvider\RsDocuments.csproj">
+    <ProjectReference Include="..\Core\ReportSmart.Documents\ReportSmart.Documents.csproj">
       <Project>{C31CE394-0BFE-4269-969F-9E473F46BA7C}</Project>
-      <Name>RsDocuments</Name>
+      <Name>ReportSmart.Documents</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -306,6 +309,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReportSmartApp.ico" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <PostBuildEvent>..\..\CurrentVersion\bin\buildEnvironment.bat</PostBuildEvent>
@@ -318,5 +324,8 @@
     <PostBuildEvent>dir &gt; c:\dir
 md ..\.results
 ..\..\..\CurrentVersion\bin\buildEnvDbg.bat &gt; ..\.results\envBuild.txt</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent />
   </PropertyGroup>
 </Project>

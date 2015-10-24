@@ -1,5 +1,5 @@
 /*
- * * $(DATE} (Adam Halassy)
+ * * $(DATE} (Adam ReportSmart)
  * 
  */
  
@@ -8,11 +8,10 @@
 using System;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Special;
-using Halassy.Special.WinApi;
-
 using ReportSmart;
+using ReportSmart.Special;
+using ReportSmart.Special.WinApi;
+
 using ReportSmart.Application;
 using ReportSmart.Controls;
 

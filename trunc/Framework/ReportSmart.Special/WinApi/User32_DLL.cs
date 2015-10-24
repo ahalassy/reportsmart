@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	view.csproj
  *
- * Copyright: Adam Halassy (2010.07.30.)
+ * Copyright: Adam ReportSmart (2010.07.30.)
  * 
  * 
  */
@@ -11,7 +11,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Halassy.Special.WinApi {
+namespace ReportSmart.Special.WinApi {
 		public static class libUser32 {
 
 				#region PUBLIC CONSTANTS:

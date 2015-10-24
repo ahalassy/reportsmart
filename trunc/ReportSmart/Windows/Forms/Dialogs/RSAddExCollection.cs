@@ -1,13 +1,12 @@
 /*
- * 2009-09-21 (Adam Halassy)
+ * 2009-09-21 (Adam ReportSmart)
  * 
  */
  
-using Halassy;
-using Halassy.Controls;
-using Halassy.Forms;
-using Halassy.Localization;
 using ReportSmart;
+using ReportSmart.Controls;
+using ReportSmart.Forms;
+using ReportSmart.Localization;
 using System.Drawing;
 using System.Windows.Forms;
 

@@ -1,5 +1,5 @@
 /*
- * * $(DATE} (Adam Halassy)
+ * * $(DATE} (Adam ReportSmart)
  * 
  */
 
@@ -13,8 +13,8 @@ namespace ReportSmart {
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 		
-		private Halassy.Controls.CPageSelector _ctlPageSelector = null;
-		private Halassy.Controls.CPageSelectorPage _pgCollections, _pgSettings;
+		private ReportSmart.Controls.CPageSelector _ctlPageSelector = null;
+		private ReportSmart.Controls.CPageSelectorPage _pgCollections, _pgSettings;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -38,7 +38,7 @@ namespace ReportSmart {
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CReportSmartForm));
-			this._ctlPageSelector = new Halassy.Controls.CPageSelector();
+			this._ctlPageSelector = new ReportSmart.Controls.CPageSelector();
 			this.CollectionManagement = new ReportSmart.Windows.Forms.RsCollectionManagement();
 			this._ctlSettingsPanel = new ReportSmart.Controls.CRSSettingsPanel();
 			this._ctlPagesHost = new System.Windows.Forms.Panel();
@@ -58,7 +58,7 @@ namespace ReportSmart {
 			this._ctlPageSelector.SelectedPage = -1;
 			this._ctlPageSelector.SelectedPageColor = System.Drawing.Color.White;
 			this._ctlPageSelector.TabIndex = 0;			
-			this._ctlPageSelector.PageColor = Halassy.Controls.ControlProperties.ColorItemInBack();
+			this._ctlPageSelector.PageColor = ReportSmart.Controls.ControlProperties.ColorItemInBack();
 			this._ctlPageSelector.AppIcon = (System.Drawing.Icon)(ReportSmart.RSResources.GFX.GetObject("Application_Icon"));
 			this._ctlPageSelector.Text = "ReportSmart View© (v" + RsViewEngine.Version.ToString() + ")";
 			this._ctlPageSelector.Glass = true;

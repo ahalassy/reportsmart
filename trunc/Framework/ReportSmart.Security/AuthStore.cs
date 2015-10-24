@@ -3,17 +3,17 @@
  * Licensing:			GPL
  * Original project:	cs.autheditor.csproj
  *
- * Copyright: Adam Halassy (2010.05.04.)
+ * Copyright: Adam ReportSmart (2010.05.04.)
  * 
  * 
  */
  
-using Halassy;
+using ReportSmart;
 
 using System;
 using System.Xml;
 
-namespace Halassy.Security {
+namespace ReportSmart.Security {
 		public static class PasswordTools {
 				private static string _ENCRYPT_DIGITS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012356789";
 				private static string _ENCRYPT_DIGITS_CAPITAL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ012356789";

@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.12.01.)
+ * Copyright: Adam ReportSmart (2009.12.01.)
  * 
  * 
  */
@@ -15,7 +15,7 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
 
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 		public class CPasswdEditorItem {
 				private CPasswdEditorItems _parent = null;
 				private int _IconIndex;

@@ -4,7 +4,7 @@
  * Licensing:			GPL
  * Original project:	view.csproj
  *
- * Copyright: Adam Halassy (2010.09.18.)
+ * Copyright: Adam ReportSmart (2010.09.18.)
  * 
  * REQUIRED SOURCES:
  *  Special/ActiveX/AcroPDF
@@ -15,7 +15,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Forms;
 
-namespace Halassy.Special.DocumentView {
+namespace ReportSmart.Special.DocumentView {
 		public abstract class CDocumentEngine {
 
 				private Control _DocControl;

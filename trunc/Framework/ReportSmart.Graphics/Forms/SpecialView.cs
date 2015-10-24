@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.09.30.)
+ * Copyright: Adam ReportSmart (2009.09.30.)
  * 
  * 
  */
@@ -15,12 +15,12 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 using System.Xml;
 
-using Halassy;
-using Halassy.Graph;
-using Halassy.Graph.Drawing;
-using Halassy.Localization;
+using ReportSmart;
+using ReportSmart.Graph;
+using ReportSmart.Graph.Drawing;
+using ReportSmart.Localization;
  
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 		public delegate void SpecialPanelEventNotify(CSpecialPanel aSender);
 
 		public class CSpecialPanelView: Panel {
@@ -246,14 +246,14 @@ namespace Halassy.Controls {
 									ColorTools.Darken(50, _clHeader),
 									_clHeader
 								);
-						Halassy.Graph.Drawing.Draw.RoundedRect(
+						ReportSmart.Graph.Drawing.Draw.RoundedRect(
 								lGraph,
 								new Rectangle(Margin.Left+1, 1, this.Width - (Margin.Size.Width)-1, _HeaderSize-1),
 								15,
 								null,
 								new SolidBrush(Color.FromArgb(0xa0, 0, 0, 0))
 							);
-						Halassy.Graph.Drawing.Draw.RoundedRect(
+						ReportSmart.Graph.Drawing.Draw.RoundedRect(
 								lGraph,
 								new Rectangle(Margin.Left, 0, this.Width - (Margin.Size.Width)-1, _HeaderSize-1),
 								15,

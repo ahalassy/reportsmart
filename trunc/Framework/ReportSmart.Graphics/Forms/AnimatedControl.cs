@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	cs.ReportHandler.csproj
  *
- * Copyright: Adam Halassy (2010.08.30.)
+ * Copyright: Adam ReportSmart (2010.08.30.)
  * 
  * 
  */
@@ -11,7 +11,7 @@
 using System;
 using System.Windows.Forms;
  
- namespace Halassy.Controls {
+ namespace ReportSmart.Controls {
  		internal abstract class CAnimatedControl: Control {
  				private Timer _timer;
  				

@@ -3,14 +3,14 @@
  * Licensing:			GPL
  * Original project:	CB-201010-01 cs.hcProgressBar.csproj
  *
- * Copyright: Adam Halassy (2010.10.01.)
+ * Copyright: Adam ReportSmart (2010.10.01.)
  * 
  * REQUIRED SOURCES:
  * /GUI/GraphicsTools.cs
  */
  
- using Halassy.Graph;
- using Halassy.Graph.Drawing;
+ using ReportSmart.Graph;
+ using ReportSmart.Graph.Drawing;
  
  using System;
  using System.ComponentModel;
@@ -19,7 +19,7 @@
  using System.Windows;
  using System.Windows.Forms;
   
- namespace Halassy.Controls {
+ namespace ReportSmart.Controls {
  		public class CProgressBar: Control {
  				private int _min, _max, _val;
  				private bool _shText, _shPercent, _reflection;

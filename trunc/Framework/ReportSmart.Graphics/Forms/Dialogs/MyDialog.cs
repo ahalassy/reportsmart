@@ -1,5 +1,5 @@
 /*
- * 2009-09-17 (Adam Halassy)
+ * 2009-09-17 (Adam ReportSmart)
  * 
  */
 
@@ -8,11 +8,11 @@ using System.Drawing;
 using System.Xml;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Controls;
-using Halassy.Localization;
+using ReportSmart;
+using ReportSmart.Controls;
+using ReportSmart.Localization;
 
-namespace Halassy.Forms {
+namespace ReportSmart.Forms {
 		public abstract class CMyDialog: CLocalizedForm {
 				public static Font DefaultTitleFont { get; set; }
 				public static Font MessageFont { get; set; }

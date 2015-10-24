@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Library</OutputType>
     <RootNamespace>ReportSmart</RootNamespace>
-    <AssemblyName>RsCore</AssemblyName>
+    <AssemblyName>ReportSmart.Core</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\globalits\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
@@ -52,9 +52,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\cs.core\rssecconv.cs">
-      <Link>Engine\rssecconv.cs</Link>
-    </Compile>
     <Compile Include="Engine\Config\BasicClasses.cs">
       <DependentUpon>RsProfileConfig.cs</DependentUpon>
     </Compile>
@@ -98,7 +95,7 @@
     </ProjectReference>
     <ProjectReference Include="..\ReportSmart.Documents\ReportSmart.Documents.csproj">
       <Project>{C31CE394-0BFE-4269-969F-9E473F46BA7C}</Project>
-      <Name>RsDocuments</Name>
+      <Name>ReportSmart.Documents</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.10.06.)
+ * Copyright: Adam ReportSmart (2009.10.06.)
  * 
  * 
  */
@@ -18,7 +18,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace Halassy.Network {
+namespace ReportSmart.Network {
  		//[Serializable]
     	//internal struct SSecurityInfo {
     	//			internal int Type;
@@ -336,7 +336,7 @@ namespace Halassy.Network {
 			}
 	}
 
-namespace Halassy.Network.Email {
+namespace ReportSmart.Network.Email {
 		//[Serializable]
 		//internal struct SEmailProfile {
 		//		internal string ProfileName, Name, UserName, Password, EmailAddress, SMTPServer, Port;

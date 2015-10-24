@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	view.csproj
  *
- * Copyright: Adam Halassy (2010.12.09.)
+ * Copyright: Adam ReportSmart (2010.12.09.)
  * 
  * 
  */
@@ -21,16 +21,15 @@ using System.Xml;
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 
-using Halassy;
-using Halassy.Forms;
-using Halassy.Localization;
-using Halassy.Network;
-using Halassy.Network.Email;
-using Halassy.Security;
-using Halassy.Special;
-using Halassy.Special.WinApi;
-
 using ReportSmart;
+using ReportSmart.Forms;
+using ReportSmart.Localization;
+using ReportSmart.Network;
+using ReportSmart.Network.Email;
+using ReportSmart.Security;
+using ReportSmart.Special;
+using ReportSmart.Special.WinApi;
+
 using ReportSmart.Engine;
 using ReportSmart.Engine.Config;
 using ReportSmart.Controls;

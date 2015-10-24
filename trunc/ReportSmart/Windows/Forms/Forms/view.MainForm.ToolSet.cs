@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.10.08.)
+ * Copyright: Adam ReportSmart (2009.10.08.)
  * 
  * 
  */
@@ -11,13 +11,11 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Controls;
-using Halassy.Forms;
-
 using ReportSmart;
-using ReportSmart.Application;
 using ReportSmart.Controls;
+using ReportSmart.Forms;
+
+using ReportSmart.Application;
 using ReportSmart.Documents;
 using ReportSmart.Documents.Collections;
 using ReportSmart.Windows.Forms;

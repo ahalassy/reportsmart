@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	cs.PLiCGen.csproj
  *
- * Copyright: Adam Halassy (2010.08.05.)
+ * Copyright: Adam ReportSmart (2010.08.05.)
  * 
  * 
  * Required sources:
@@ -13,12 +13,12 @@
  * 
  */
  
-using Halassy;
+using ReportSmart;
 
 using System;
 using System.Xml;
 
-namespace Halassy.Security {
+namespace ReportSmart.Security {
 		public static class PublicLicenseCode {
 				private const string __VERCH = "ABCDEFGHIJKLMNOPQRSTVWXYZ";
 		

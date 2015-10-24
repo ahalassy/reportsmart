@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	EmbeddedApp.csproj
  *
- * Copyright: Adam Halassy (2009.09.28.)
+ * Copyright: Adam ReportSmart (2009.09.28.)
  * 
  * 
  */
@@ -15,7 +15,7 @@
  using System.Runtime.InteropServices;
  using System.Windows.Forms; 
  
- namespace Halassy.Special {
+ namespace ReportSmart.Special {
  		namespace WinApi {
  				public static class WindowManagement {
  						#region FIELDS:

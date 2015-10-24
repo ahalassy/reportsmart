@@ -3,18 +3,16 @@
  * Licensing:			GPL
  * Original project:	edit.csproj
  *
- * Copyright: Adam Halassy (2010.06.10.)
+ * Copyright: Adam ReportSmart (2010.06.10.)
  * 
  * 
  */
-using Halassy;
+using ReportSmart;
 
 using System;
 using System.Reflection;
 using System.Resources;
 using System.Xml;
-
-using ReportSmart;
 
 namespace ReportSmart {
 		internal static class RSResources {

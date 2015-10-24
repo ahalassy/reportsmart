@@ -5,8 +5,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Library</OutputType>
-    <RootNamespace>Halassy.Common</RootNamespace>
-    <AssemblyName>Halassy.Common</AssemblyName>
+    <RootNamespace>ReportSmart.Common</RootNamespace>
+    <AssemblyName>ReportSmart.Common</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\globalits\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
     <OutputPath>..\..\..\.bin\</OutputPath>
@@ -41,6 +41,9 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
     <Reference Include="System" />
@@ -49,13 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include=".source" />
     <Compile Include=".source\common-classes.cs" />
     <Compile Include=".source\common-exceptions.cs" />
-    <Compile Include=".source\common-tools.cs" />
-    <Compile Include=".source\FileSystemTools.cs" />
-    <Compile Include=".source\list-classes.cs" />
-    <Compile Include=".source\Versioning.cs" />
-    <Compile Include=".source\XmlTools.cs" />
+    <Compile Include="CommonTools.cs" />
+    <Compile Include="FileSystem.cs" />
+    <Compile Include="Versioning.cs" />
+    <Compile Include="XmlTools.cs" />
   </ItemGroup>
 </Project>

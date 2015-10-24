@@ -20,11 +20,11 @@ using System.IO;
 using System.Xml;
 using System.Windows.Forms;
 
-using Halassy.Classes;
+using ReportSmart.Classes;
 
-namespace Halassy {
+namespace ReportSmart {
 		public static class CommonTools {
-				public const string MY_NAME = "Halassy Studio";
+				public const string MY_NAME = "ReportSmart Studio";
 
 				public static System.Array ResizeArray(System.Array aArray, int aSize) {
    						int lSize = aArray.Length;
@@ -495,7 +495,7 @@ namespace Halassy {
 			}
 	}
 	
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 
 		public struct ControlProperties {
 				// Sizes:
@@ -530,7 +530,7 @@ namespace Halassy.Controls {
 			}
 	}
 
-namespace Halassy.Graph {
+namespace ReportSmart.Graph {
 
 		public class Coloring {
 				public static Color MergeColors(Color clSource, Color clTarget, double aScale) {

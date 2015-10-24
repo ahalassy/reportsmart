@@ -1,6 +1,6 @@
 /*
  * 
- * Adam Halassy, 2009.06.20.
+ * Adam ReportSmart, 2009.06.20.
  * 
  */
  
@@ -9,7 +9,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
  
-namespace Halassy {
+namespace ReportSmart {
 		namespace Graph {
 				public struct SHSBColor {
 						public int Hue;

@@ -2,7 +2,7 @@
  *
  * Original project:	ReportSmart.csproj
  *
- * Copyright: Adam Halassy (2010.08.30.)
+ * Copyright: Adam ReportSmart (2010.08.30.)
  * 
  * Required sources:
  *   /Special/WinApi/User32_dll.cs
@@ -18,14 +18,14 @@ using System.Drawing.Text;
 using System.Timers;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Forms;
-using Halassy.Graph.Drawing;
-using Halassy.GUI;
-using Halassy.Special;
-using Halassy.Special.WinApi;
+using ReportSmart;
+using ReportSmart.Forms;
+using ReportSmart.Graph.Drawing;
+using ReportSmart.GUI;
+using ReportSmart.Special;
+using ReportSmart.Special.WinApi;
 
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 	public enum TSnapping{
 			snapNone,
 			snapLeft,
@@ -179,7 +179,7 @@ namespace Halassy.Controls {
 			}
 		
 		public bool Glass {
-				get { return _Glass && Halassy.GUI.DwmApi.DwmAvailable(); }
+				get { return _Glass && ReportSmart.GUI.DwmApi.DwmAvailable(); }
 				set {
 						_Glass = value;
 						Invalidate();

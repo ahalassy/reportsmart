@@ -1,5 +1,5 @@
 /*
- * 2009.09.08. (Adam Halassy)
+ * 2009.09.08. (Adam ReportSmart)
  * 
  */
 

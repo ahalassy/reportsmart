@@ -1,5 +1,5 @@
 /*
- * 2009-09-14 (Adam Halassy)
+ * 2009-09-14 (Adam ReportSmart)
  * 
  */
  
@@ -9,9 +9,9 @@ using System.IO;
 using System.Xml;
 using System.Windows.Forms;
 
-using Halassy;
+using ReportSmart;
 
-namespace Halassy.Localization {
+namespace ReportSmart.Localization {
 		public class ELocalization: Exception { public ELocalization(string aMessage): base(aMessage) {	}}
 		
 		public class ELocalizationTag: Exception { public ELocalizationTag(string aMessage): base(aMessage) {	}}

@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	RsCore.csproj
  *
- * Copyright: Adam Halassy (2010.12.02.)
+ * Copyright: Adam ReportSmart (2010.12.02.)
  * 
  * 
  */
@@ -16,8 +16,6 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 using System.Windows.Forms;
-
-using Halassy;
 
 using ReportSmart;
 using ReportSmart.Engine;

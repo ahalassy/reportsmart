@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	view.csproj
  *
- * Copyright: Adam Halassy (2010.06.26.)
+ * Copyright: Adam ReportSmart (2010.06.26.)
  * 
  * 
  */
@@ -14,7 +14,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 
-namespace Halassy.Special.WinApi {
+namespace ReportSmart.Special.WinApi {
 		public struct SUxTextProperties {
 				public Color color;
 				public int glowSize;

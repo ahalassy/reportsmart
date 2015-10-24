@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	cs.FindCRPlugin.csproj
  *
- * Copyright: Adam Halassy (2010.07.29.)
+ * Copyright: Adam ReportSmart (2010.07.29.)
  * 
  * 
  */
@@ -15,7 +15,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Halassy.Special {
+namespace ReportSmart.Special {
 		public static class DotNetAsmInfo {
 				[DllImport("DotNetAsmInfo.dll", CharSet= CharSet.Ansi, CallingConvention = CallingConvention.StdCall)]
 				public static extern string GetAssemblyInfoString(string aAssemblyFile);

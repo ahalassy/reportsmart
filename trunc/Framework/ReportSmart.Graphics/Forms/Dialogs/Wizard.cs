@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.10.05.)
+ * Copyright: Adam ReportSmart (2009.10.05.)
  * 
  * 
  */
@@ -14,12 +14,12 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
-using Halassy;
-using Halassy.Forms;
-using Halassy.Localization;
-using Halassy.Controls;
+using ReportSmart;
+using ReportSmart.Forms;
+using ReportSmart.Localization;
+using ReportSmart.Controls;
  
-namespace Halassy.Forms {
+namespace ReportSmart.Forms {
 
 		public abstract class CWizardPanel: CLocalizedPanel {
 				public CWizardDialog HostDialog;

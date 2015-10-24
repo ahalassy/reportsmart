@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.10.28.)
+ * Copyright: Adam ReportSmart (2009.10.28.)
  * 
  * 
  */
@@ -11,9 +11,9 @@
 using System;
 using System.IO;
 
-namespace Halassy {
+namespace ReportSmart {
 		public static class FileSystem {		
-				public const string GROUP_DIR = "Halassy";
+				public const string GROUP_DIR = "ReportSmart";
 				
 				public static string DefaultFileName = "document";
 				

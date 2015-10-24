@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	RsCore.csproj
  *
- * Copyright: Adam Halassy (2010.12.04.)
+ * Copyright: Adam ReportSmart (2010.12.04.)
  * 
  * 
  */

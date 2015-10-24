@@ -1,22 +1,20 @@
 ﻿/*
- * * $(DATE} (Adam Halassy)
+ * * $(DATE} (Adam ReportSmart)
  * 
  */
 
-using Halassy;
-using Halassy.Controls;
-using Halassy.GUI;
-using Halassy.Localization;
-using Halassy.Special.WinApi;
+using ReportSmart;
+using ReportSmart.Controls;
+using ReportSmart.GUI;
+using ReportSmart.Localization;
+using ReportSmart.Special.WinApi;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
-using ReportSmart;
 using ReportSmart.Application;
-using ReportSmart.Controls;
 using ReportSmart.Windows.Forms;
 
 namespace ReportSmart {

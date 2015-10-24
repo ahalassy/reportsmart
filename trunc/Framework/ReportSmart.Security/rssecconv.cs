@@ -3,13 +3,13 @@
  * Licensing:			GPL
  * Original project:	cs.autheditor.csproj
  *
- * Copyright: Adam Halassy (2010.09.28.)
+ * Copyright: Adam ReportSmart (2010.09.28.)
  * 
  * 
  */
 
-using Halassy;
-using Halassy.Security;
+using ReportSmart;
+using ReportSmart.Security;
 using System.Xml;
 
 namespace ReportSmart {

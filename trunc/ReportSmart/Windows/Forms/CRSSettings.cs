@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.09.30.)
+ * Copyright: Adam ReportSmart (2009.09.30.)
  * 
  * 
  */
@@ -14,14 +14,13 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml;
 
-using Halassy;
-using Halassy.Controls;
-using Halassy.Localization;
-using Halassy.Network;
-using Halassy.Network.Email;
-using Halassy.Security;
-
 using ReportSmart;
+using ReportSmart.Controls;
+using ReportSmart.Localization;
+using ReportSmart.Network;
+using ReportSmart.Network.Email;
+using ReportSmart.Security;
+
 using ReportSmart.Application;
 using ReportSmart.Application.Defaults;
 using ReportSmart.Engine;

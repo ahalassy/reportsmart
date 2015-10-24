@@ -1,5 +1,5 @@
 ﻿/*
- * 2009-09-14 (Adam Halassy)
+ * 2009-09-14 (Adam ReportSmart)
  * 
  */
  
@@ -8,10 +8,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
-using Halassy;
-using Halassy.Localization;
-
 using ReportSmart;
+using ReportSmart.Localization;
+
 using ReportSmart.Application;
 using ReportSmart.Controls;
 using ReportSmart.Documents;

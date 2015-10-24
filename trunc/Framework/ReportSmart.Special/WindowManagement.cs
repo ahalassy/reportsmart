@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	view.csproj
  *
- * Copyright: Adam Halassy (2010.10.21.)
+ * Copyright: Adam ReportSmart (2010.10.21.)
  * 
  * SOURCES:
  * Special/WinAp/User32_DLL
@@ -12,9 +12,9 @@
 using System;
 using System.Diagnostics;
 
-using Halassy.Special.WinApi;
+using ReportSmart.Special.WinApi;
  
-namespace Halassy.Special {
+namespace ReportSmart.Special {
  		public static class WindowHelper {
  		
  				#region STATIC:

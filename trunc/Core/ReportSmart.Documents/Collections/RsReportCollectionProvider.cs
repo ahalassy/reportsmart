@@ -3,14 +3,11 @@
  * Licensing:			GPL
  * Original project:	RsReportProvider.csproj
  *
- * Copyright: Adam Halassy (2010.12.10.)
+ * Copyright: Adam ReportSmart (2010.12.10.)
  * 
  * 
  */
 using System;
-
-using Halassy;
-using Halassy.Controls;
 
 using ReportSmart;
 using ReportSmart.Documents;

@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Library</OutputType>
     <RootNamespace>Halassy</RootNamespace>
-    <AssemblyName>Halassy.Graphics</AssemblyName>
+    <AssemblyName>ReportSmart.Graphics</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\Adam\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
@@ -54,6 +54,9 @@
     <Optimize>True</Optimize>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <OutputPath>bin\Debug\</OutputPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
@@ -138,15 +141,15 @@
   <ItemGroup>
     <ProjectReference Include="..\ReportSmart.Common\ReportSmart.Common.csproj">
       <Project>{834DA602-BD10-4BCF-848A-510EF75CF79B}</Project>
-      <Name>Halassy.Common</Name>
+      <Name>ReportSmart.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\ReportSmart.Security\ReportSmart.Security.csproj">
-      <Project>{73A4D166-6D81-4EF8-AFAA-45A42C56CF32}</Project>
-      <Name>Halassy.Security</Name>
+      <Project>{73a4d166-6d81-4ef8-afaa-45a42c56cf32}</Project>
+      <Name>ReportSmart.Security</Name>
     </ProjectReference>
     <ProjectReference Include="..\ReportSmart.Special\ReportSmart.Special.csproj">
-      <Project>{7D980308-4AA1-4B64-8CAF-FFAFB86FF52D}</Project>
-      <Name>Halassy.Special</Name>
+      <Project>{7d980308-4aa1-4b64-8caf-ffafb86ff52d}</Project>
+      <Name>ReportSmart.Special</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

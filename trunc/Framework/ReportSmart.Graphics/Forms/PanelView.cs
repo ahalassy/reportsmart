@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2010.06.07.)
+ * Copyright: Adam ReportSmart (2010.06.07.)
  * 
  * 
  */
@@ -12,10 +12,10 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Graph.Drawing;
+using ReportSmart;
+using ReportSmart.Graph.Drawing;
 
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 		public struct SMargins {
 				private int _all;
 		

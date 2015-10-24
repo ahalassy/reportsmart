@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.11.11.)
+ * Copyright: Adam ReportSmart (2009.11.11.)
  * 
  * 
  */
@@ -15,10 +15,9 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml;
  
-using Halassy;
-using Halassy.Localization;
-
 using ReportSmart;
+using ReportSmart.Localization;
+
 using ReportSmart.Engine;
 using ReportSmart.Engine.Config;
 using ReportSmart.Controls;
@@ -30,7 +29,7 @@ namespace ReportSmart.Application {
         
         		public const int CURRENT_PROFILE_VERSION = 1;
 
-				public static string SETTINGSDIR = Halassy.CommonTools.MY_NAME + "\\" + RsApplicationInfo.ApplicationName;
+				public static string SETTINGSDIR = ReportSmart.CommonTools.MY_NAME + "\\" + RsApplicationInfo.ApplicationName;
 				public static string SETTINGSFILENAME = "reportsmart.profile";
 				public static string FAVORITESFILENAME = "favorites.rfc";				
 				public static string SECURITYFILENAME = "security";
@@ -169,7 +168,7 @@ namespace ReportSmart.Application {
 //				public const string XMLa_TIMEOUT = "timeout";
 //				
 //				public const string SECURITYFILENAME = "security";
-//				public const string SETTINGSDIR = Halassy.CommonTools.MY_NAME + "\\" + RsApplicationInfo.ApplicationName;
+//				public const string SETTINGSDIR = ReportSmart.CommonTools.MY_NAME + "\\" + RsApplicationInfo.ApplicationName;
 //				public const string SETTINGSFILENAME = "reportsmart.profile";
 //				public const string FAVORITESFILENAME = "favorites.rfc";				
 //				

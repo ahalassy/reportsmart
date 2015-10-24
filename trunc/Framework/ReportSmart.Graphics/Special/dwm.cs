@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	dwm.csproj
  *
- * Copyright: Adam Halassy (2010.03.12.)
+ * Copyright: Adam ReportSmart (2010.03.12.)
  * 
  * 
  */
@@ -13,7 +13,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace Halassy.GUI {
+namespace ReportSmart.GUI {
 		public static class DwmApi {
 				public const int
 							SWP_FRAMECHANGED = 0x0020,

@@ -1,11 +1,11 @@
 /*
- *2009-09-14 (Adam Halassy)
+ *2009-09-14 (Adam ReportSmart)
  * 
  */
  
 using System;
 
-namespace Halassy {
+namespace ReportSmart {
 		// Manage application version like "#1.#2.x.#3" (eg.: 0.1.a.0)
 		// #1: Major
 		// #2: Minor

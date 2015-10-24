@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	view.csproj
  *
- * Copyright: Adam Halassy (2010.12.09.)
+ * Copyright: Adam ReportSmart (2010.12.09.)
  * 
  * 
  */

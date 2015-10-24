@@ -1,5 +1,5 @@
 ﻿/*
- * 2009-09-14 (Adam Halassy)
+ * 2009-09-14 (Adam ReportSmart)
  * 
  */
  
@@ -17,16 +17,15 @@ using System.Xml;
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 
-using Halassy;
-using Halassy.Forms;
-using Halassy.Localization;
-using Halassy.Network;
-using Halassy.Network.Email;
-using Halassy.Security;
-using Halassy.Special;
-using Halassy.Special.WinApi;
-
 using ReportSmart;
+using ReportSmart.Forms;
+using ReportSmart.Localization;
+using ReportSmart.Network;
+using ReportSmart.Network.Email;
+using ReportSmart.Security;
+using ReportSmart.Special;
+using ReportSmart.Special.WinApi;
+
 using ReportSmart.Engine;
 using ReportSmart.Engine.Config;
 using ReportSmart.Controls;
@@ -161,8 +160,8 @@ namespace ReportSmart.Application {
 						Locale.AddLocalizedControl(_AddReport);
 						#if DEMO
 						try {
-								long lVal = Halassy.Authorization.AppAuth.chkshwauthfrw(Halassy.Authorization.AppAuth.crdtstamp(new DateTime(2010, 5, 23), _YM, _MM, _DM), _YM, _MM, _DM, _PERIOD);
-								long lChkval = Halassy.Authorization.AppAuth.gnchkval(_YM, _MM, _DM, _PERIOD);
+								long lVal = ReportSmart.Authorization.AppAuth.chkshwauthfrw(ReportSmart.Authorization.AppAuth.crdtstamp(new DateTime(2010, 5, 23), _YM, _MM, _DM), _YM, _MM, _DM, _PERIOD);
+								long lChkval = ReportSmart.Authorization.AppAuth.gnchkval(_YM, _MM, _DM, _PERIOD);
 								Math.Sqrt(lVal - lChkval);
 							} catch {
 								KillApplication();
@@ -376,8 +375,8 @@ namespace ReportSmart.Application {
 							
 							#if DEMO
 							try {
-									long lVal = Halassy.Authorization.AppAuth.chkshwauthfrw(Halassy.Authorization.AppAuth.crdtstamp(new DateTime(2010, 5, 23), _YM, _MM, _DM), _YM, _MM, _DM, _PERIOD);
-									long lChkval = Halassy.Authorization.AppAuth.gnchkval(_YM, _MM, _DM, _PERIOD);
+									long lVal = ReportSmart.Authorization.AppAuth.chkshwauthfrw(ReportSmart.Authorization.AppAuth.crdtstamp(new DateTime(2010, 5, 23), _YM, _MM, _DM), _YM, _MM, _DM, _PERIOD);
+									long lChkval = ReportSmart.Authorization.AppAuth.gnchkval(_YM, _MM, _DM, _PERIOD);
 									Math.Sqrt(lVal - lChkval);
 								} catch {
 									KillApplication();
@@ -414,8 +413,8 @@ namespace ReportSmart.Application {
 						
 						#if DEMO
 						try {
-								long lVal = Halassy.Authorization.AppAuth.chkshwauthfrw(Halassy.Authorization.AppAuth.crdtstamp(new DateTime(2010, 5, 23), _YM, _MM, _DM), _YM, _MM, _DM, _PERIOD);
-								long lChkval = Halassy.Authorization.AppAuth.gnchkval(_YM, _MM, _DM, _PERIOD);
+								long lVal = ReportSmart.Authorization.AppAuth.chkshwauthfrw(ReportSmart.Authorization.AppAuth.crdtstamp(new DateTime(2010, 5, 23), _YM, _MM, _DM), _YM, _MM, _DM, _PERIOD);
+								long lChkval = ReportSmart.Authorization.AppAuth.gnchkval(_YM, _MM, _DM, _PERIOD);
 								Math.Sqrt(lVal - lChkval);
 								
 							} catch {

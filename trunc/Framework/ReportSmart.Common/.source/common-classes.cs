@@ -8,9 +8,9 @@
  */
 
 using System;
-using Halassy;
+using ReportSmart;
 
-namespace Halassy.Classes {
+namespace ReportSmart.Classes {
 		internal interface IItemClass {
 				string toString();
 

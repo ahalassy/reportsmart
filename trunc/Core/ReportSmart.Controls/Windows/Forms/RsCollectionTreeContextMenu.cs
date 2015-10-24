@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	RsControls.csproj
  *
- * Copyright: Adam Halassy (2010.12.10.)
+ * Copyright: Adam ReportSmart (2010.12.10.)
  * 
  * 
  */
@@ -12,8 +12,8 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
-using Halassy;
-using Halassy.Localization;
+using ReportSmart;
+using ReportSmart.Localization;
 
 namespace ReportSmart.Windows.Forms {
 		/// <summary>

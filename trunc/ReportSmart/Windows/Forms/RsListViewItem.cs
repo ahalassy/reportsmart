@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	view.csproj
  *
- * Copyright: Adam Halassy (2010.12.18.)
+ * Copyright: Adam ReportSmart (2010.12.18.)
  * 
  * 
  */	
@@ -11,7 +11,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-using Halassy.Localization;
+using ReportSmart.Localization;
 
 using ReportSmart;
 using ReportSmart.Application;

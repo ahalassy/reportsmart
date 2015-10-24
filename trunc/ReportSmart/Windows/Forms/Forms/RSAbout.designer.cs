@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.10.14.)
+ * Copyright: Adam ReportSmart (2009.10.14.)
  * 
  * 
  */

@@ -3,17 +3,17 @@
  * Licensing:			GPL
  * Original project:	ReportSmart
  *
- * Copyright: Adam Halassy (2009.09.24.)
+ * Copyright: Adam ReportSmart (2009.09.24.)
  * 
  * 
  */
  
-using Halassy.Graph;
+using ReportSmart.Graph;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 		public class CExtendedTextBox: TextBox {
 				private string _ContentHelp;
 				private bool _ShowingContentHelp;

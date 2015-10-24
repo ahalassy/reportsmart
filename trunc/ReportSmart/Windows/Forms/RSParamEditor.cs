@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	view.csproj
  *
- * Copyright: Adam Halassy (2010.06.04.)
+ * Copyright: Adam ReportSmart (2010.06.04.)
  * 
  * 
  */
@@ -17,8 +17,8 @@ using System.Windows.Forms;
  
 using CrystalDecisions.Shared;
 
-using Halassy.Localization;
-using Halassy.Graph;
+using ReportSmart.Localization;
+using ReportSmart.Graph;
 
 using ReportSmart;
 using ReportSmart.Application;
@@ -208,14 +208,14 @@ namespace ReportSmart.Controls {
 									ColorTools.Darken(50, _headerColor),
 									_headerColor
 								);
-						Halassy.Graph.Drawing.Draw.RoundedRect(
+						ReportSmart.Graph.Drawing.Draw.RoundedRect(
 								lGraph,
 								new Rectangle(_hMargin+1, _vMargin+1, this.Width - _vMargin+1, _vHeaderSize+1),
 								15,
 								null,
 								new SolidBrush(Color.FromArgb(0xa0, 0, 0, 0))
 							);
-						Halassy.Graph.Drawing.Draw.RoundedRect(
+						ReportSmart.Graph.Drawing.Draw.RoundedRect(
 								lGraph,
 								new Rectangle(_hMargin, _vMargin, this.Width - _vMargin, _vHeaderSize),
 								15,
@@ -229,14 +229,14 @@ namespace ReportSmart.Controls {
 									ColorTools.Darken(50, _headerColor),
 									_headerColor
 								);
-						Halassy.Graph.Drawing.Draw.RoundedRect(
+						ReportSmart.Graph.Drawing.Draw.RoundedRect(
 								lGraph,
 								new Rectangle(_hMargin+1, _waBottom+1, this.Width - _vMargin+1, _vHeaderSize+1),
 								15,
 								null,
 								new SolidBrush(Color.FromArgb(0xa0, 0, 0, 0))
 							);
-						Halassy.Graph.Drawing.Draw.RoundedRect(
+						ReportSmart.Graph.Drawing.Draw.RoundedRect(
 								lGraph,
 								new Rectangle(_hMargin, _waBottom, this.Width - _vMargin, _vHeaderSize),
 								15,
@@ -255,7 +255,7 @@ namespace ReportSmart.Controls {
 								
 						// Drawing columns:
 						for (int i = 0; i < UsedColumnCount; i++) {
-								Halassy.Graph.Drawing.Draw.RoundedRect(
+								ReportSmart.Graph.Drawing.Draw.RoundedRect(
 										lGraph,
 										new Rectangle(_hMargin + (columnWidth + _hMargin)*i, _waTop - (_vMargin/2), columnWidth, _waHeight),
 										15,

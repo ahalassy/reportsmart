@@ -1,5 +1,5 @@
 ﻿/*
- * 2009-09-23 (Adam Halassy)
+ * 2009-09-23 (Adam ReportSmart)
  * 
  */
  
@@ -15,22 +15,21 @@ using System.Timers;
 using System.Windows.Forms;
 using System.Xml;
 
-using AcroPDFLib;
+// using AcroPDFLib;
 
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using CrystalDecisions.Windows.Forms;
 
-using Halassy;
-using Halassy.Controls;
-using Halassy.Network;
-using Halassy.Network.Email;
-using Halassy.Security;
-using Halassy.Special;
-using Halassy.Special.WinApi;
-using Halassy.Special.ActiveX.AcroPDF;
-
 using ReportSmart;
+using ReportSmart.Controls;
+using ReportSmart.Network;
+using ReportSmart.Network.Email;
+using ReportSmart.Security;
+using ReportSmart.Special;
+using ReportSmart.Special.WinApi;
+using ReportSmart.Special.ActiveX.AcroPDF;
+
 using ReportSmart.Application;
 using ReportSmart.Documents;
 using ReportSmart.Engine;
@@ -1072,7 +1071,7 @@ namespace ReportSmart.Controls {
 						_ParamEditor.Anchor = (AnchorStyles)(AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom);
 						_ParamEditor.Visible = false;
 						_ParamEditor.BackColor = Color.White;
-						_ParamEditor.HeaderColor = Halassy.Controls.ControlProperties.ColorItemInBack();
+						_ParamEditor.HeaderColor = ReportSmart.Controls.ControlProperties.ColorItemInBack();
 						_ParamEditor.AcceptParams += ehParamsAccepted;
 						
 						this.Controls.Add(_lDisplay);

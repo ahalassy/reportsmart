@@ -3,18 +3,18 @@
  * Licensing:			GPL
  * Original project:	cs.autheditor.csproj
  *
- * Copyright: Adam Halassy (2010.04.20.)
+ * Copyright: Adam ReportSmart (2010.04.20.)
  * 
  * Required sources:
  * GUI/GraphicsTools.cs
  * COMMON/CommonTools.cs
  */
  
-using Halassy;
-using Halassy.Graph;
-using Halassy.Graph.Drawing;
-using Halassy.Localization;
-using Halassy.Security;
+using ReportSmart;
+using ReportSmart.Graph;
+using ReportSmart.Graph.Drawing;
+using ReportSmart.Localization;
+using ReportSmart.Security;
 
 using System; 
 using System.Collections;
@@ -23,7 +23,7 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 
 		public class CAuthEditor: Panel, ILocalizedControl {
 				protected class CAuthItem: Control {

@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	bin.csproj
  *
- * Copyright: Adam Halassy (2009.12.02.)
+ * Copyright: Adam ReportSmart (2009.12.02.)
  * 
  * 
  */
@@ -12,7 +12,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-using Halassy.Localization;
+using ReportSmart.Localization;
 
 using ReportSmart;
 using ReportSmart.Application;

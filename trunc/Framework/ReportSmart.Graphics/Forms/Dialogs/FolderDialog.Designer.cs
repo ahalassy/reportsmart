@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	InventoryForm.csproj
  *
- * Copyright: Adam Halassy (2010.11.24.)
+ * Copyright: Adam ReportSmart (2010.11.24.)
  * 
  * 
  */

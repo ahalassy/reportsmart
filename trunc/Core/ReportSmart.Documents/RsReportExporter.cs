@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	RsReportProvider.csproj
  *
- * Copyright: Adam Halassy (2010.12.02.)
+ * Copyright: Adam ReportSmart (2010.12.02.)
  * 
  * 
  */
@@ -13,22 +13,18 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Timers;
-//using System.Windows.Forms;
 using System.Xml;
 
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using CrystalDecisions.Windows.Forms;
 
-using Halassy;
-using Halassy.Controls;
-using Halassy.Network;
-using Halassy.Network.Email;
-using Halassy.Security;
-using Halassy.Special;
-using Halassy.Special.WinApi;
-
 using ReportSmart;
+using ReportSmart.Network;
+using ReportSmart.Network.Email;
+using ReportSmart.Security;
+using ReportSmart.Special;
+using ReportSmart.Special.WinApi;
 
 namespace ReportSmart.Documents {
 		

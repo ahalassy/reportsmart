@@ -1,9 +1,9 @@
 /*
  *
  * Licensing:			GPL
- * Original project:	Halassy.Common.csproj
+ * Original project:	ReportSmart.Common.csproj
  *
- * Copyright: Adam Halassy (2010.11.04.)
+ * Copyright: Adam ReportSmart (2010.11.04.)
  * 
  * 
  */
@@ -14,7 +14,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Halassy {
+namespace ReportSmart {
 		public static partial class XmlTools {
  				#region XML Serialization:
  				/// <summary>

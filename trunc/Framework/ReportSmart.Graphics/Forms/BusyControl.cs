@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	view.csproj
  *
- * Copyright: Adam Halassy (2010.09.19.)
+ * Copyright: Adam ReportSmart (2010.09.19.)
  * 
  * 
  */
@@ -13,7 +13,7 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
 
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 		internal class CBusyControl: Control {
 				private Control _ctl;
 				

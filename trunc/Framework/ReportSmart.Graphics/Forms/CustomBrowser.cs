@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	cs.ReportHandler.csproj
  *
- * Copyright: Adam Halassy (2010.08.30.)
+ * Copyright: Adam ReportSmart (2010.08.30.)
  * 
  * Required files:
  *   /GUI/Controls/AnimatedControl.cs
@@ -15,7 +15,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 		internal class CCustomBrowserButton: CAnimatedControl {
 				//private int _AniVal;
 		

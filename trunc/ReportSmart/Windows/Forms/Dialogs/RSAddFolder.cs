@@ -1,17 +1,16 @@
 /*
- * 2009-09-17 (Adam Halassy)
+ * 2009-09-17 (Adam ReportSmart)
  * 
  */
  
 using System.Drawing;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Controls;
-using Halassy.Forms;
-using Halassy.Localization;
-
 using ReportSmart;
+using ReportSmart.Controls;
+using ReportSmart.Forms;
+using ReportSmart.Localization;
+
 using ReportSmart.Application;
 
 namespace ReportSmart.Controls {

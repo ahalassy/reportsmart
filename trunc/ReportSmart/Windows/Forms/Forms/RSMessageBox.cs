@@ -1,5 +1,5 @@
 /*
- * 2009-09-22 (Adam Halassy)
+ * 2009-09-22 (Adam ReportSmart)
  * 
  */
  
@@ -10,8 +10,8 @@ using System.Collections;
 using System.Windows;
 using System.Windows.Forms;
 
-using Halassy.Controls;
-using Halassy.Localization;
+using ReportSmart.Controls;
+using ReportSmart.Localization;
 
 using ReportSmart;
 using ReportSmart.Application;

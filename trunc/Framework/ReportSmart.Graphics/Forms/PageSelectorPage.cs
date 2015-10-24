@@ -1,9 +1,9 @@
 /*
  *
  * Licensing:			GPL
- * Original project:	Halassy.Graphics.csproj
+ * Original project:	ReportSmart.Graphics.csproj
  *
- * Copyright: Adam Halassy (2010.12.06.)
+ * Copyright: Adam ReportSmart (2010.12.06.)
  * 
  * 
  */
@@ -16,15 +16,15 @@ using System.Drawing.Text;
 using System.Timers;
 using System.Windows.Forms;
 
-using Halassy;
-using Halassy.Forms;
-using Halassy.Graph.Drawing;
-using Halassy.GUI;
-using Halassy.Special;
-using Halassy.Special.WinApi;
+using ReportSmart;
+using ReportSmart.Forms;
+using ReportSmart.Graph.Drawing;
+using ReportSmart.GUI;
+using ReportSmart.Special;
+using ReportSmart.Special.WinApi;
 
 
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 	public class CPageSelectorPage {
 			public event PageCloseNotify CloseNotify;
 			public event PageEventNotify PageSelected;

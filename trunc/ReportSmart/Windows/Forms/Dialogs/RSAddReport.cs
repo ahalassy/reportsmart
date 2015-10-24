@@ -1,5 +1,5 @@
 ﻿/*
- * * $(DATE} (Adam Halassy)
+ * * $(DATE} (Adam ReportSmart)
  * 
  */
 
@@ -8,10 +8,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml; 
 
-using Halassy;
-using Halassy.Localization;
-
 using ReportSmart;
+using ReportSmart.Localization;
+
 using ReportSmart.Application;
 
 namespace ReportSmart.Controls {

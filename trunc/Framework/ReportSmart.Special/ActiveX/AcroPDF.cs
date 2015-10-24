@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	cs.DOCView.csproj
  *
- * Copyright: Adam Halassy (2010.09.18.)
+ * Copyright: Adam ReportSmart (2010.09.18.)
  * 
  * REQUIRED REFERENCE:
  * AcroPDFLib
@@ -13,7 +13,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using AcroPDFLib;
 
-namespace Halassy.Special.ActiveX.AcroPDF
+namespace ReportSmart.Special.ActiveX.AcroPDF
 {
     public class CAcroPDFCtl : AxHost
     {

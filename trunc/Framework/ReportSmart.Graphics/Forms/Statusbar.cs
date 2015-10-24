@@ -3,7 +3,7 @@
  * Licensing:			GPL
  * Original project:	dev_statusbar.csproj
  *
- * Copyright: Adam Halassy (2010.07.24.)
+ * Copyright: Adam ReportSmart (2010.07.24.)
  * 
  * 
  */
@@ -13,9 +13,9 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-using Halassy.Graph;
+using ReportSmart.Graph;
 
-namespace Halassy.Controls {
+namespace ReportSmart.Controls {
 
 		public class CStatusControl: Control {
 				private int _min, _max, _val, _cmin, _cmax, _cval;
