@@ -133,6 +133,11 @@
     <Compile Include="Application\RSCore.cs" />
     <Compile Include="Application\RsViewProfileManager.cs" />
     <Compile Include="Documents\Collections\RsFavoritesRoot.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\GFX.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -223,6 +228,10 @@
     <Compile Include="Properties\view.AssemblyInfo.cs" />
     <Compile Include="view.cs" />
     <Compile Include="Windows\Forms\RsCollectionControl.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows\Forms\Dialogs\RSAddReport.resx">
       <DependentUpon>RSAddReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,12 +262,15 @@
     </None>
     <None Include="..\locale\de-de.xml">
       <Link>Resources\Locales\de-de.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\locale\en-us.xml">
       <Link>Resources\Locales\en-us.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\locale\hu-hu.xml">
       <Link>Resources\Locales\hu-hu.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -40,11 +40,22 @@ namespace ReportSmart.Application {
 
         		public string SecurityFile { get { return string.Concat(FileSystem.ToPath(this.RsViewProfilePath), SECURITYFILENAME); } }
         		public string FavoritesFile { get { return FileSystem.ToPath(this.RsViewProfilePath) + FAVORITESFILENAME; } }
-        		public string LocalePath { get { return FileSystem.ToPath(this.ApplicationPath) + "locale\\"; }}
+
+                public string LocalePath
+                {
+                    get
+                    {
+                        return Path.Combine(
+                            FileSystem.ToPath(this.ApplicationPath),
+                            ReportSmart.Application.Properties.Resources.DirLocales
+                            );
+                    }
+                }
+
         		public string RsViewProfile { get { return FileSystem.ToPath(this.RsViewProfilePath) + "reportsmart.profile"; }}
         
         		public string GetLocalizationFile() {
-						return ApplicationPath + "locale\\" + Profile.Settings.Locale.Language + ".xml";
+						return Path.Combine(LocalePath, Profile.Settings.Locale.Language + ".xml");
 					}
 					
 				public RsCollectionConfig GetFavoritesCollection() {
@@ -132,7 +143,7 @@ namespace ReportSmart.Application {
 				public RsViewProfileManager(): base() {
 				
 						FileInfo lBinInfo = new FileInfo(System.Windows.Forms.Application.ExecutablePath);
-						this.ApplicationPath = FileSystemTools.toPath(lBinInfo.Directory.Parent.FullName);
+						this.ApplicationPath = FileSystemTools.toPath(lBinInfo.Directory.FullName);
 						
 						this.WinUserProfilePath = FileSystemTools.toPath(System.Environment.GetEnvironmentVariable("APPDATA"));
 						this.RsViewProfilePath = FileSystemTools.toPath(WinUserProfilePath + SETTINGSDIR);
