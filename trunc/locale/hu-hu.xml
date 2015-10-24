@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportSmart-Locale>
+		<informations>
+				<author>Adam Halassy</author>
+				<version>0.2.rc.1</version>
+				<langName>Magyar (Hungary)</langName>
+				<chooseInstruction>Válassza ki az ön által beszélt nyelvet az alábbi listából!</chooseInstruction>
+			</informations>
+	
+		<content>
+				<messageList>
+						<msgbox name="confirmRemoveProfile" title="Profil eltávolítása">Valóban eltávolítja ezt a profilt?</msgbox>
+						<msgbox name="collectionMissing" title="Hiányzó gyűjtemény">Egy gyűjtemény hiányzik. Megkeresi ezt a gyűjteményt?</msgbox>
+						<msgbox name="offline_formatnotsupported" title="Kapcsolat nélküli mód">Sajnos ez a formátum kapcsolat nélküli módban nem támogatott.</msgbox>
+						<msgbox name="sendMail">Levél előkészítése</msgbox>
+						<msgbox name="bugreport">Hibajelentés küldése...</msgbox>
+						<msgbox name="splash_settings">Beállítások...</msgbox>
+						<msgbox name="splash_ui">Felhasználói felület...</msgbox>
+						<msgbox name="splasy_asm">Hivatkozott összeállítások keresése...</msgbox>
+						<msgbox name="auth_expired" title="ReportSmart View (A) RC1">Lejárt a tesztidőszak! Ha tetszett a program, akkor kérem, vásárolja meg a teljes verziót. További tájékoztatást látogassa meg a http://halassylife.blogspot.com oldalt, vagy írjon az adam.halassy@gmail.com címre.</msgbox>
+						<msgbox name="auth_remain" title="ReportSmart View (A) RC1">Ön a "ReportSmart View (A)" RC1 verzióját indította el. Ezen verzió használatával kipróbálhatja a "ReportSmart View (A)" képességeit, mielőtt megvásárolná a szoftvert. FIGYELEM! Ez a program csak tesztelési célokra alkalmazható 2010. Május 23-ig. A teszidőszak letelte után ez a verzió már nem használható. További információkért látogassa meg a http://halassylife.blogspot.com oldalt, vagy írjon az adam.halassy@gmail.com címre.</msgbox>
+
+						<!-- 0.2.rc.1 -->
+						<msgbox name="status_swoffline">Váltás kapcsolat nélküli módra...</msgbox>
+						<msgbox name="status_nowoffline">A riport most kapcsolat nélküli módba váltott. Kapcsolat nélküli módban néhány funkció és export formátum nem elérhető.</msgbox>
+						<msgbox name="sec_convert" title="Biztonsági frissítés">Ezen a számítógépen a ReportSmart View egy korai verziója futott, ezért a program most átkonvertálja a tárolt bejelentkezési adatokat egy biztonságosabb formátumba.</msgbox>
+						<msgbox name="collectionmustsave" title="Gyűjtemény mentése">Biztos benne, hogy nem menti el ezt a gyűjteményt?</msgbox>
+						<msgbox name="assemblyMissing" title="Hiányzó összeállítás">A következő összeállítás nem található:</msgbox>
+						<msgbox name="rptNotFound" title="Nem lehet megnyitni">Sajnos a kiválasztott riport nem található.</msgbox>
+						
+						<!-- -->
+						<msgbox name="debug_notimplemented" title="A funkció nem elérhető">Ez a funkció még fejlesztési fázisban van, ezért nem elérhető.</msgbox>
+					</messageList>
+				
+				<tags>
+						<tag name="appCritical">Sajnos hiba történt</tag>
+						<tag name="appCrashed">Egy nem várt hiba miatt a ReportSmart összeomlott. Kíván elküldeni egy hibajelentést a gyártónak? (Ehhez Internet kapcsolat szükséges)</tag>
+						<tag name="appCrashedNotify">Egy nem várt hiba miatt ez a riport nem jeleníthető meg.</tag>
+						<tag name="apply">Alkalmaz</tag>
+						<tag name="browse">Tallóz...</tag>
+						<tag name="cancel">Mégse</tag>
+						<tag name="clear">Visszaállítás</tag>
+						<tag name="error">Hiba</tag>
+						<tag name="favorites">Kedvencek</tag>
+						<tag name="fileDOC">Ms Word dokumentum</tag>
+						<tag name="fileHTM">Weblap</tag>
+						<tag name="filePDF">PDF dokumentum</tag>
+						<tag name="fileXLS">Ms Excel táblázat</tag>
+						<tag name="fileXlsDataOnly">Csak adatok</tag>
+						<tag name="fileXlsFormatted">Formázott mnunkafüzet</tag>
+						<tag name="fileXML">XML fájl</tag>
+						<tag name="finish">Befejezés</tag>
+						<tag name="defaultSenderName">ReportSmart e-mail postás</tag>
+						<tag name="defaultSenderMail">ismeretlen@kiszolgáló.x</tag>
+						<tag name="next">Tovább</tag>
+						<tag name="manageCollections">Gyűjtemények kezelése</tag>
+						<tag name="no">Nem</tag>
+						<tag name="ok">Ok</tag>
+						<tag name="password">Jelszó</tag>
+						<tag name="prev">Vissza</tag>
+						<tag name="rc1info1">Még</tag>
+						<tag name="rc1info2">nap van hátra a tesztidőszakból.</tag>
+						<tag name="save">Mentés</tag>
+						<tag name="service">Szolgáltatás</tag>
+						<tag name="settings">Beállítások</tag>
+						<tag name="user">Felhasználó</tag>
+						<tag name="yes">Igen</tag>
+						<tag name="verify">Megerősítés</tag>
+						<tag name="details">Részletek</tag>
+						<tag name="wait_DSCollect">Adatforrások ellenőrzése...</tag>
+						<tag name="wait_Build">Riport összeállítása...</tag>
+						<tag name="wait_Init">Inicializálás...</tag>
+						<tag name="wait_Open">Riport megnyitása...</tag>
+			
+						<!--0.2.rc.1-->
+						<tag name="format">Formátum</tag>
+						<tag name="paramEdit">Paraméter szerkesztő</tag>
+						<tag name="enabled">Engedélyezve</tag>
+						<tag name="remove">Eltávolítás</tag>
+						<tag name="reset">Visszaállítás</tag>
+						<tag name="timeout">Időzítés</tag>
+						<tag name="uHour">óra</tag>
+						<tag name="uMin">perc</tag>
+						<tag name="wait_DSBuild">Adatforrások felépítése...</tag>
+						
+						<!-- 0.2.rc.2 -->
+						<tag name="pagesize">Papírméret</tag>
+						<tag name="orientation">Tájolás</tag>
+						
+						<!-- -->
+						<tag name="newFolder">Új mappa</tag>
+						<tag name="open">Megnyitás</tag>
+						<tag name="rename">Átnevezés</tag>
+						
+					</tags>
+				
+				<dialogs>
+						<dlgSetupLogin>
+								<caption>Adatforrás bejelentkezési adatai</caption>
+								<title1>Bejelentkezési adatok a(z)</title1>
+								<title2>adatforráshoz</title2>
+								<description>Meg kell adnia az adatforráshoz tartozó bejelentkezési adatokat. Dönthet úgyis, hogy a ReportSmart megjegyezze a beállításokat, így később nem kell újra megadnia. (Legyen körültekintő: a jelszavak és felhasználói nevek tárolása komoly biztonság kockázatot jelent!)</description>
+								<ctlSetLogon>Bejelentkezési név és jelszó beállítása</ctlSetLogon>
+								<ctlNoSave>Ne mentse a beállításokat</ctlNoSave>
+								<ctlSaveForThisReport>Ehhez a riporthoz mentse a beállításokat</ctlSaveForThisReport>
+								<ctlSaveForDS>Mentse a beállításokat az adatforráshoz</ctlSaveForDS>
+								<lName>Bejelentkezési név:</lName>
+								<eName>felhasználói név</eName>
+								<lPassword>Jelszó:</lPassword>
+								<ePassword>jelszó</ePassword>
+							</dlgSetupLogin>
+							
+						<dlgCreateCollection>
+								<caption>Gyűjtemény létrehozása</caption>
+								<description>Gyűjtemények segítségével könnyen szervezheti többféle szempont szerint is riportjait, és akár meg is oszthatja munkatársaival a gyűjteményeket.</description>
+								<title>Új gyűjtemény létrehozása</title>
+								<lCollectionName>Új gyűjtemény neve</lCollectionName>
+							</dlgCreateCollection>
+							
+						<dlgAddFolder>
+								<caption>Új katalógus</caption>
+								<title1>Katalógus hozzáadaása a</title1>
+								<title2>gyűjteményhez</title2>
+								<description>Katalógusok hozzáadásával gyűjteményen belül is csoportosíthatja a riportjait. Az így csoportosított riportok között már sokkal könnyebb eligazodni!</description>
+								<lFolderName>Új katalógus neve:</lFolderName>
+								<text name="noName">Nem adott nevet a katalógusnak!</text>
+							</dlgAddFolder>
+							
+						<AddReport>
+								<text name="title1">Riport hozzáadása a</text>
+								<text name="title2">gyűjteményhez</text>
+								<text name="details">Jelöljön ki egy riportfájlt, amit szeretne hozzáadni a gyűjteményhez. Így a későbbiekben nem kell újra megkeresnie a riportot: gyorsan meg tudja nyitni a gyűjteményből.</text>
+								<text name="group">Új riport tulajdonságai</text>
+								<lAlias>Riport neve:</lAlias>
+								<lReportFile>Riportfájl elérési útvonala:</lReportFile>
+							</AddReport>
+							
+						<about>
+							</about>
+			
+				<generalDialogs>
+						<fileType name="allFiles">Minden fájl</fileType>
+						<fileType name="collection">Gyűjtemények</fileType>
+						<fileType name="reportFile">Riportfájlok</fileType>
+						<fileType name="excel">Ms Excel táblázatok</fileType>
+						<fileType name="word">Ms Word dokumentumok</fileType>
+						<fileType name="xml">XML dokumentum</fileType>
+						<fileType name="html">HTML dokumentum</fileType>
+						<fileType name="pdf">PDF dokumentum</fileType>
+					</generalDialogs>
+			</dialogs>
+		
+				<wizards>
+						<dlgSendMail>
+								<caption>Riport elküldése levélben</caption>
+								<title>Elektronikus levél varázsló</title>
+								<page name="pExport">
+										<description>Válassza ki, hogy milyen formátumban szeretné elküldeni a riportot!</description>
+									</page>
+							</dlgSendMail>
+					</wizards>
+					
+				<forms>
+						<about>
+								<caption>A ReportSmart View névjegye</caption>
+							</about>
+							
+						<Settings>
+								<title>Beállítások</title>
+							</Settings>
+			
+						<MainForm>
+								<pHome>Kezdőlap</pHome>
+								<pEdit>Szerkesztés</pEdit>
+								<pExport>Export és nyomtatás</pExport>
+								<pView>Nézet</pView>
+								<hint name="open">Riport megnyitása</hint>
+								<hint name="import">Gyűjtemény importálása</hint>
+								<hint name="export">Gyűjtemény exportálása</hint>
+								<hint name="addColl">Új gyűjtemény létrehozása</hint>
+								<hint name="addCatalog">Új katalógus</hint>
+								<hint name="addRpt">Új riport</hint>
+								<hint name="editRpt">Riport szerkesztése</hint>
+								<hint name="remove">Eltávolítás</hint>
+								<hint name="settings">Beállítások</hint>
+								<hint name="about">Névjegy</hint>
+								<hint name="print">Nyomtatás</hint>
+								<hint name="mail">Riport küldése e-mailben</hint>
+								<hint name="expPdf">Exportálás PDF formátumba</hint>
+								<hint name="expWord">Exportálás Word dokumentumként</hint>
+								<hint name="expExcel">Exportálás Excel táblázatként</hint>
+								<hint name="expHtml">Exportálás weblapként</hint>
+								<hint name="expXml">Exportálás XML dokumentumként</hint>
+								<hint name="refresh">Riport frissítése</hint>
+								<hint name="groups">Csoportok megjelenítése/elrejtése</hint>
+								<hint name="zoomIn">Nagyítás</hint>
+								<hint name="zoomOut">Kicsinyítés</hint>
+								<hint name="fitWidth">Dokumentum szélesség igazítása az ablakhoz</hint>
+								<hint name="fitPage">Dokumentum oldal igazítása az ablakhoz</hint>
+								<hint name="pFirst">Első oldal</hint>
+								<hint name="pPrev">Előző oldal</hint>
+								<hint name="pNext">Következő oldal</hint>
+								<hint name="pLast">Utolsó oldal</hint>
+				
+								<!-- 2.0.rc.1 -->
+								<hint name="offline">Váltás kapcsolat nélküli módra</hint>
+							</MainForm>
+			
+						<ReportViewer>
+							</ReportViewer>
+							
+						<CollectionEditor>
+								<text name="collectionNotSelected">Nem választott ki gyűjteményt, így nem tudom, hogy hova tegyem a riportot!</text>
+								<text name="collectionNotSelected-Folder">Nem választott ki gyűjteményt, ezért nem lehet új katalógust létrehozni!</text>
+								<text name="itemNotSelected_del">Törléshez előbb jelöljön ki egy elemet!</text>
+								<text name="verify_rmFile">Biztosan eltávolítja ezt a riportot:</text>
+								<text name="verify_rmFolder">Biztosan eltávolítja a katalógust, és teljes tartalmát:</text>
+								<text name="verify_eraseFavs">Biztosan törli a Kedvenceit?</text>
+								<text name="verify_rmCollection">Biztosan eltávolítja ezt a gyűjteményt:</text>
+								<text name="nosaved_collection">Menti a következő gyűjtemény módosításait:</text>
+							</CollectionEditor>
+		
+					</forms>
+		
+				<panels>
+						<general>
+								<title>Általános beállítások</title>
+								<embeddedparam>Beágyazott paraméterszerkesztő (Fejlesztői változat)</embeddedparam>
+							</general>
+			
+						<language>
+								<title>Nyelv választás</title>
+							</language>
+			
+						<export>
+								<title>Nyomtatás, Export és E-mail</title>
+								<pagesizes>
+										<paper sizestr="DefaultPaperSize">Alapértelmezett méret</paper>
+										<paper sizestr="Paper10x14">10x14</paper>
+										<paper sizestr="Paper11x17">11x17</paper>
+										<paper sizestr="PaperA3">A3</paper>
+										<paper sizestr="PaperA4">A4</paper>
+										<paper sizestr="PaperA4Small">A4 (Kicsi)</paper>
+										<paper sizestr="PaperA5">A5</paper>
+										<paper sizestr="PaperB4">B4</paper>
+										<paper sizestr="PaperB5">B5</paper>
+										<paper sizestr="PaperCsheet">"C" ív</paper>
+										<paper sizestr="PaperDsheet">"D" ív</paper>
+										<paper sizestr="PaperEnvelope10"></paper>
+										<paper sizestr="PaperEnvelope11"></paper>
+										<paper sizestr="PaperEnvelope12"></paper>
+										<paper sizestr="PaperEnvelope14"></paper>
+										<paper sizestr="PaperEnvelope9"></paper>
+										<paper sizestr="PaperEnvelopeB4"></paper>
+										<paper sizestr="PaperEnvelopeB5"></paper>
+										<paper sizestr="PaperEnvelopeB6"></paper>
+										<paper sizestr="PaperEnvelopeC3"></paper>
+										<paper sizestr="PaperEnvelopeC4"></paper>
+										<paper sizestr="PaperEnvelopeC5"></paper>
+										<paper sizestr="PaperEnvelopeC6"></paper>
+										<paper sizestr="PaperEnvelopeC65"></paper>
+										<paper sizestr="PaperEnvelopeDL"></paper>
+										<paper sizestr="PaperEnvelopeItaly"></paper>
+										<paper sizestr="PaperEnvelopeMonarch"></paper>
+										<paper sizestr="PaperEnvelopePersonal"></paper>
+										<paper sizestr="PaperEsheet"></paper>
+										<paper sizestr="PaperExecutive"></paper>
+										<paper sizestr="PaperFanfoldLegalGerman"></paper>
+										<paper sizestr="PaperFanfoldStdGerman"></paper>
+										<paper sizestr="PaperFanfoldUS"></paper>
+										<paper sizestr="PaperFolio"></paper>
+										<paper sizestr="PaperLedger"></paper>
+										<paper sizestr="PaperLegal"></paper>
+										<paper sizestr="PaperLetter"></paper>
+										<paper sizestr="PaperLetterSmall"></paper>
+										<paper sizestr="PaperNote"></paper>
+										<paper sizestr="PaperQuarto"></paper>
+										<paper sizestr="PaperStatement"></paper>
+										<paper sizestr="PaperTabloid">s</paper>
+									</pagesizes>
+										
+							</export>
+			
+						<security>
+								<title>Biztonság</title>
+							</security>
+			
+						<offline>
+								<title>Kapcsolat nélküli munka</title>
+							</offline>
+			
+						<authitem>
+								<typelist>
+										<DatasourceSecurity>Adatforrás</DatasourceSecurity>
+										<report>Riport</report>
+									</typelist>
+							</authitem>
+							
+					</panels>
+					
+				<menus>
+						<collectionFolderContext>
+								<addFolder>Új mappa</addFolder>
+								<renameFolder>Átnevezés</renameFolder>
+								<deleteFolder>Mappa eltávolítása</deleteFolder>>
+							</collectionFolderContext>
+					</menus>
+					
+			</content>
+			
+	</ReportSmart-Locale>

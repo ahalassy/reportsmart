@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportSmart-Locale>
+		<informations>
+				 <author>Karoly Tajcsnek</author>
+				 <version>0.1.a.2</version>
+				 <langName>Deutsch (German)</langName>
+				 <chooseInstruction>Válassza ki az ön által beszélt nyelvet az alábbi listából!</chooseInstruction>
+			</informations>
+		<content>
+				<messageList>
+						<msgbox name="confirmRemoveProfile" title="Profilentfernung">Entfernen Sie wirklich dieses Profil?</msgbox>
+						<msgbox name="collectionMissing" title="Fehlende Sammlung">Es fehlt eine Sammlung. Suchen Sie diese Sammlung?</msgbox>
+						<msgbox name="assemblyMissing" title="Fehlende Assembly">Die folgende Assembly ist nicht gefunden:</msgbox>
+						<msgbox name="rptNotFound" title="Est ist nicht zu öffnen">Die auswählende Reportage ist nicht gefunden</msgbox>
+						<msgbox name="sendMail">Vorbereitung des Briefes</msgbox>
+						<msgbox name="bugreport">Sendung der Fehlermeldung...</msgbox>
+						<msgbox name="splash_settings">Einstellungen...</msgbox>
+						<msgbox name="splash_ui">Benutzeroberfläche...</msgbox>
+						<msgbox name="splasy_asm">Suche der bezugnemender Assemblys...</msgbox>
+						<msgbox name="auth_expired" title="ReportSmart View (A) RC1">Lejárt a tesztidőszak! Ha tetszett a program, akkor kérem, vásárolja meg a teljes verziót. További tájékoztatást látogassa meg a http://halassylife.blogspot.com oldalt, vagy írjon az adam.halassy@gmail.com címre.</msgbox>
+						<msgbox name="auth_remain" title="ReportSmart View (A) RC1">Ön a "ReportSmart View (A)" RC1 verzióját indította el. Ezen verzió használatával kipróbálhatja a "ReportSmart View (A)" képességeit, mielőtt megvásárolná a szoftvert. FIGYELEM! Ez a program csak tesztelési célokra alkalmazható 2010. Május 23-ig. A teszidőszak letelte után ez a verzió már nem használható. További információkért látogassa meg a http://halassylife.blogspot.com oldalt, vagy írjon az adam.halassy@gmail.com címre.</msgbox>
+					</messageList>
+				<tags>
+						<tag name="appCritical">Es wurde leider Fehler gemacht</tag>
+						<tag name="appCrashed">Wegen eines nicht wartendes Fehlers ist ReportSmart kaputt. Möchten Sie eine Fehlermeldung dem Hersteller senden? (Dazu müssen Sie Internetverbindung haben)</tag>
+						<tag name="appCrashedNotify">Wegen eines nicht wartendes Fehlers diese Reportage nicht angezeigt</tag>
+						<tag name="apply">Übernehmen</tag>
+						<tag name="browse">Durchsuchen...</tag>
+						<tag name="cancel">Abbrechen</tag>
+						<tag name="clear">Wiederherstellen</tag>
+						<tag name="error">Fehler</tag>
+						<tag name="favorites">Favoriten</tag>
+						<tag name="fileDOC">Ms Word Dokument</tag>
+						<tag name="fileHTM">Webseite</tag>
+						<tag name="filePDF">PDF Dokument</tag>
+						<tag name="fileXLS">Ms Excel táblázat</tag>
+						<tag name="fileXML">XML datei</tag>
+						<tag name="finish">Abschliessen</tag>
+						<tag name="defaultSenderName">ReportSmart e-mail Briefträger</tag>
+						<tag name="defaultSenderMail">unbekannt@server.x</tag>
+						<tag name="next">Weiter</tag>
+						<tag name="manageCollections">Gyűjtemények kezelése</tag>
+						<tag name="no">Nein</tag>
+						<tag name="ok">Ok</tag>
+						<tag name="password">Kennwort</tag>
+						<tag name="prev">Vissza</tag>
+						<tag name="remove">Eltávolítás</tag>
+						<tag name="save">Speichern</tag>
+						<tag name="service">Szolgáltatás</tag>
+						<tag name="settings">Einstellungen</tag>
+						<tag name="user">Benutzer</tag>
+						<tag name="yes">Ja</tag>
+						<tag name="verify">Megerősítés</tag>
+						<tag name="details">Részletek</tag>
+						<tag name="wait_DSCollect">Kontrolle Datenquelle...</tag>
+						<tag name="wait_Build">Reportagezusammenstellung...</tag>
+						<tag name="wait_Init">Vorbereitung...</tag>
+						<tag name="wait_Open">Reportageöffnung...</tag>
+						<tag name="paramEdit">Parameterbearbeiter</tag>
+						
+						<tag name="rc1info1">Még</tag>
+						<tag name="rc1info2">nap van hátra a tesztidőszakból.</tag>
+					</tags>
+				<dialogs>
+						<dlgSetupLogin>
+								<caption>Anmeldendaten der Datenquelle</caption>
+								<title1>Anmeldendaten zu</title1>
+								<title2>Datenquelle</title2>
+								<description>Sie müssen die Anmeldungsdaten zu Datenquellen angeben. Sie können auch so entscheiden, dass ReportSmart sich die Einstellungen merken. So müssen Sie sie später nicht wieder angeben. (Seien Sie vorsichtig: Das Speichern der Kennwörter und Benutzernamen bedeutet eine grosse Gefahr!)</description>
+								<ctlSetLogon>Einstellung des Benutzernamen und Kennwort</ctlSetLogon>
+								<ctlNoSave>Die Einstellungen nicht zu speihern</ctlNoSave>
+								<ctlSaveForThisReport>Speichern die Einstellungen zu dieser Reportage</ctlSaveForThisReport>
+								<ctlSaveForDS>Speichern die Einstellungen zu dieser Datenquelle</ctlSaveForDS>
+								<lName>Benutzername:</lName>
+								<eName>Benutzername</eName>
+								<lPassword>Kennwort:</lPassword>
+								<ePassword>Kennwort</ePassword>
+							</dlgSetupLogin>
+						<dlgCreateCollection>
+								<caption>Erstellung einer neunen Sammlung</caption>
+								<description>Mit den Sammlungen können Sie nach vielen Gesichtspunkten Ihre Reportagen organisieren. Sie können sogar Ihre Sammlungen mit den Mitarbeitern teilen.</description>
+								<title>Erstellung einer neunen Sammlung</title>
+								<lCollectionName>Name der neuen Sammlung</lCollectionName>
+							</dlgCreateCollection>
+						<dlgAddFolder>
+								<caption>Neue Katalog</caption>
+								<title1>Einen Katalog hinzufügen zur</title1><title2>Sammlung</title2>
+								<description>Mit dem Zugeben der Kataloge können Sie Ihre Reportagen auch innerhalb der Sammlung gruppieren. Zwischen den gruppierten Reportagen ist es leichter sich auszukennen.</description>
+								<lFolderName>Name des neuen Katalogs</lFolderName>
+								<text name="noName">Sie haben dem Katalog keinen Namen gegeben!</text>
+							</dlgAddFolder>
+						<AddReport>
+									<text name="title1">Eine Reportage hinzufügen zur</text><text name="title2">Sammlung</text>
+									<text name="details">Wählen Sie eine Reportagedatei, die Sie zur Sammlung zugeben möchten. So müssen Sie später die Reportage nicht wieder suchen: es ist schnell aus der Sammlung zu öffnen.</text>
+									<text name="group">Eigenschaften der neuen Reportage</text>
+									<lAlias>Reportagenamen</lAlias>
+									<lReportFile>Reportagedatei</lReportFile>
+								</AddReport>
+						<about>
+							</about>
+						<generalDialogs>
+								<fileType name="allFiles">Jede Datei</fileType>
+								<fileType name="collection">Sammlungen</fileType>
+								<fileType name="reportFile">Reportagen</fileType>
+								<fileType name="excel">Ms Excel Tabelles</fileType>
+								<fileType name="word">Ms Word Dokumente</fileType>
+								<fileType name="xml">XML Dokumente</fileType>
+								<fileType name="html">HTML Dokumente</fileType>
+								<fileType name="pdf">PDF Dokumente</fileType>						
+								
+							</generalDialogs>
+					</dialogs>
+				<wizards>
+				
+						<dlgNewSMTPProfile>
+								<caption>Új levélküldő fiók létrehozása</caption>
+								<title>E-mail profil varázsló</title>
+								
+								<page name="Global">
+										<description>Ezzel a varázslóval könnyedén be tudja állítani az e-mail küldéshez szükséges beállításokat. Ha valamelyik beállítást nem érti, vagy nem ismeri az értékét, kérjen segítséget a rendszergazdától, vagy Internet szolgáltatójától.</description>
+										<lProfileName>E-mail profil neve</lProfileName>
+										<eProfileName>profilnév</eProfileName>
+									</page>
+								<page name="Personal">
+										<description>Adja meg a nevét, és az e-mail címét, hogy levelezőpartnerei a ReportSmart-tal küldött e-mail-jeire is tudjanak válaszolni.</description>
+										<lName>Az Ön neve</lName>
+										<eName>név</eName>
+										<lEmail>E-mail címe</lEmail>
+										<eEmail>válaszcím</eEmail>
+									</page>
+								<page name="SMTP">
+										<description>A levélküldő kiszolgáló beállításához segítséget az Internet szolgáltatójától, vagy a rendszergazdától kaphat.</description>
+										<lServer>SMTP kiszolgáló</lServer>
+										<eServer>Name oder IP addresse név vagy ip cím</eServer>
+										<lPort>Kommunikációs port</lPort>
+										<ePort>alapértelmezés: 25</ePort>
+									</page>
+									
+								<page name="Security">
+										<description>Egyes levelezőkiszolgálók kérhetnek bejelentkezési nevet és jelszót. Ezeket most beállíthatja.</description>
+										<ctlAuth>Felhasználói név és jelszó szükséges az e-mail küldéshez</ctlAuth>
+										<ctlSSL>Bejelentkezési adatok küldése SSL csatornán keresztül</ctlSSL>
+										<lUserName>Felhasználói név</lUserName>
+										<eUserName>felhasználói név</eUserName>
+										<lPasswd>Jelszó</lPasswd>
+										<ePasswd>jelszó</ePasswd>
+									</page>
+							</dlgNewSMTPProfile>
+						
+						<dlgSendMail>
+								<caption>Sendung der Reportage im Brief</caption>
+								<title>Briefzauberer</title>
+								
+								<page name="pExport">
+										<description>Wählen Sie, in welchem format Sie die Reportage senden möchten!</description>
+									</page>
+							</dlgSendMail>
+					</wizards>
+				<forms>
+						<about>
+								<caption>Namenkarte des "ReportSmart View"-s</caption>
+							</about>
+						<Settings>
+								<title>Einstellungen</title>
+							</Settings>
+						<MainForm>
+								<pHome>Startblatt</pHome>
+								<pEdit>Bearbeitungen</pEdit>
+								<pExport>Export und Drücken</pExport>
+								<pView>Ansicht</pView>
+								<hint name="open">Öffnung der Reportage</hint>
+								<hint name="import">Importieren der Sammlung</hint>
+								<hint name="export">Exportieren der Sammlung</hint>
+								<hint name="addColl">Új gyűjtemény létrehozása</hint>
+								<hint name="addCatalog">Neue Katalog</hint>
+								<hint name="addRpt">Neue Reportage</hint>
+								<hint name="editRpt">Riport szerkesztése</hint>
+								<hint name="remove">Eltávolítás</hint>
+								<hint name="settings">Einstellungen</hint>
+								<hint name="about">Info</hint>
+								<hint name="print">Drücknen</hint>
+								<hint name="mail">Riport küldése e-mailben</hint>
+								<hint name="expPdf">Exportálás PDF formátumba</hint>
+								<hint name="expWord">Exportálás Word dokumentumként</hint>
+								<hint name="expExcel">Exportálás Excel táblázatként</hint>
+								<hint name="expHtml">Exportálás weblapként</hint>
+								<hint name="expXml">Exportálás XML dokumentumként</hint>
+								<hint name="refresh">Riport frissítése</hint>
+								<hint name="groups">Csoportok megjelenítése/elrejtése</hint>
+								<hint name="zoomIn">Nagyítás</hint>
+								<hint name="zoomOut">Kicsinyítés</hint>
+								<hint name="fitWidth">Dokumentum szélesség igazítása az ablakhoz</hint>
+								<hint name="fitPage">Dokumentum oldal igazítása az ablakhoz</hint>
+								<hint name="pFirst">Első oldal</hint>
+								<hint name="pPrev">Előző oldal</hint>
+								<hint name="pNext">Következő oldal</hint>
+								<hint name="pLast">Utolsó oldal</hint>
+							</MainForm>
+						<ReportViewer>
+							</ReportViewer>
+						<CollectionEditor>
+								<text name="collectionNotSelected">Nem választott ki gyűjteményt, így nem tudom, hogy hova tegyem a riportot!</text>
+								<text name="collectionNotSelected-Folder">Nem választott ki gyűjteményt, ezért nem lehet új katalógust létrehozni!</text>
+								<text name="itemNotSelected_del">Törléshez előbb jelöljön ki egy elemet!</text>
+								<text name="verify_rmFile">Biztosan eltávolítja ezt a riportot:</text>
+								<text name="verify_rmFolder">Biztosan eltávolítja a katalógust, és teljes tartalmát:</text>
+								<text name="verify_eraseFavs">Biztosan törli a Kedvenceit?</text>
+								<text name="verify_rmCollection">Biztosan eltávolítja ezt a gyűjteményt:</text>
+								<text name="nosaved_collection">Menti a következő gyűjtemény módosításait:</text>
+							</CollectionEditor>
+					</forms>
+				<panels>
+						<general>
+								<title>Nyelv</title>
+							 </general>
+						<export>
+								<title>Export és import</title>
+							 </export>
+						<security>
+								<title>Biztonság</title>
+							 </security>
+					</panels>
+			</content>
+	</ReportSmart-Locale>

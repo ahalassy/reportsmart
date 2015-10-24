@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{03EF7F63-6724-4DE4-8978-73BE89C1AB4A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ReportSmart</RootNamespace>
+    <AssemblyName>RsCore</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\globalits\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebHelper">
+      <HintPath>..\..\..\..\..\.bin\WebHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\cs.core\rssecconv.cs">
+      <Link>Engine\rssecconv.cs</Link>
+    </Compile>
+    <Compile Include="Engine\Config\BasicClasses.cs">
+      <DependentUpon>RsProfileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\Config\RsCollectionConfig.cs">
+      <DependentUpon>RsProfileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\Config\RsProfileManager.cs" />
+    <Compile Include="Engine\Config\RsProfileConfig.cs">
+    </Compile>
+    <Compile Include="Engine\Config\RsSettingsConfig.cs">
+      <DependentUpon>RsProfileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\Config\RsUserInterfaceConfig.cs">
+      <DependentUpon>RsProfileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\RsApplicationInfo.cs" />
+    <Compile Include="Engine\RsCollectionManager.cs" />
+    <Compile Include="Engine\RsReportMailSender.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\ReportSmart.Common\ReportSmart.Common.csproj">
+      <Project>{834da602-bd10-4bcf-848a-510ef75cf79b}</Project>
+      <Name>ReportSmart.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ReportSmart.Graphics\ReportSmart.Graphics.csproj">
+      <Project>{ad72311a-fb51-4963-95d9-90d9aeb560fb}</Project>
+      <Name>ReportSmart.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ReportSmart.Network\ReportSmart.Network.csproj">
+      <Project>{063c9875-0159-409f-831e-956f14aba7f4}</Project>
+      <Name>ReportSmart.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ReportSmart.Security\ReportSmart.Security.csproj">
+      <Project>{73a4d166-6d81-4ef8-afaa-45a42c56cf32}</Project>
+      <Name>ReportSmart.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ReportSmart.Special\ReportSmart.Special.csproj">
+      <Project>{7d980308-4aa1-4b64-8caf-ffafb86ff52d}</Project>
+      <Name>ReportSmart.Special</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportSmart.Documents\ReportSmart.Documents.csproj">
+      <Project>{C31CE394-0BFE-4269-969F-9E473F46BA7C}</Project>
+      <Name>RsDocuments</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Communication\" />
+  </ItemGroup>
+</Project>

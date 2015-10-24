@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportSmart-Locale>
+		<informations>
+				<author>Adam Halassy</author>
+				<version>0.2.rc.1</version>
+				<langName>English</langName>
+				<chooseInstruction>Please choose your spoken language from the following list!</chooseInstruction>
+			</informations>
+			
+		<content>
+				<messageList>
+						<msgbox name="confirmRemoveProfile" title="Remove profile">Are you sure remove this profile?</msgbox>
+						<msgbox name="collectionMissing" title="Missing collection">A collection is missing. Do you want to search this collection?</msgbox>
+						<msgbox name="assemblyMissing" title="Missing assembly">The following assembly is missing:</msgbox>
+						<msgbox name="rptNotFound" title="Cannot open">Unfortunately the selected report not found.</msgbox>
+						<msgbox name="sendMail">Preparing e-mail...</msgbox>
+						<msgbox name="bugreport">Sending bugreport...</msgbox>
+						<msgbox name="splash_settings">Settings...</msgbox>
+						<msgbox name="splash_ui">User profile...</msgbox>
+						<msgbox name="splasy_asm">Looking for referenced assemblies...</msgbox>
+						<msgbox name="auth_expired" title="ReportSmart View (A) RC1">The testing period expired! If you found useful this application please buy the full version. For more informations visit http://halassylife.blogspot.com/ or e-mail to adam.halassy@gmail.com.</msgbox>
+						<msgbox name="auth_remain" title="ReportSmart View (A) RC1">You are using RC1 version of "ReportSmart View (A)". Using this version you can try the features of "ReportSmart View (A)" before you buy it. WARNING! This version only can be used for testing purposes until May 23, 2010. After test periond expired this version cannot be run. For more informations, please visit http://halassylife.blogspot.com/, or e-mail to adan.halassy@gmail.com!</msgbox>
+						
+						<!--0.2.rc.1-->
+						<msgbox name="status_swoffline">Switching to offline...</msgbox>
+						<msgbox name="status_nowoffline">The report now shown in offline mode. In offline mode some functions and export modes not available.</msgbox>
+						<msgbox name="sec_convert" title="Security update">An old version of ReportSmart view has been used on this computer, so the application will convert the stored authentication information to a more secure format.</msgbox>
+						<msgbox name="collectionmustsave" title="Save Collection">Are You sure, that you do not save the Collection?</msgbox>
+					
+						<msgbox name="debug_notimplemented" title="The function no available">This function currently in development state, so not available</msgbox>
+					</messageList>
+					
+				<tags>
+						<tag name="appCritical">Unfortunately an error occured</tag>
+						<tag name="appCrashed">An unexpected error occured, and ReportSmart View has stopped working. Do You want to send an error report to the vendor? (Internet access required for sending)</tag>
+						<tag name="appCrashedNotify">Report cannot be displayed through an error.</tag>
+						<tag name="apply">Apply</tag>
+						<tag name="browse">Browse...</tag>
+						<tag name="cancel">Cancel</tag>
+						<tag name="clear">Clear</tag>
+						<tag name="error">Error</tag>
+						<tag name="favorites">Favorites</tag>
+						<tag name="fileDOC">Ms Word document</tag>
+						<tag name="fileHTM">Webpage</tag>
+						<tag name="filePDF">PDF document</tag>
+						<tag name="fileXLS">Ms Excel table</tag>
+						<tag name="fileXlsDataOnly">Data only</tag>
+						<tag name="fileXlsFormatted">Formatted workbook</tag>
+						<tag name="fileXML">XML file</tag>
+						<tag name="finish">Finish</tag>
+						<tag name="defaultSenderName">ReportSmart e-mail post agent</tag>
+						<tag name="defaultSenderMail">unknown@server.x</tag>
+						<tag name="next">Next</tag>
+						<tag name="manageCollections">Manage collections</tag>
+						<tag name="no">No</tag>
+						<tag name="ok">Ok</tag>
+						<tag name="password">Password</tag>
+						<tag name="prev">Back</tag>
+						<tag name="rc1info1"></tag>
+						<tag name="rc1info2">days left from test period.</tag>
+						<tag name="remove">Remove</tag>
+						<tag name="save">Save</tag>
+						<tag name="service">Service</tag>
+						<tag name="settings">Settings</tag>
+						<tag name="user">User</tag>
+						<tag name="yes">Yes</tag>
+						<tag name="verify">Confirm</tag>
+						<tag name="details">Details</tag>
+						<tag name="wait_DSCollect">Adatforrások ellenőrzése...</tag>
+						<tag name="wait_Build">Build report...</tag>
+						<tag name="wait_Init">Initializing...</tag>
+						<tag name="wait_Open">Opening report...</tag>
+						<tag name="paramEdit">Parameter editor</tag>
+						
+						<!--0.2.rc.1-->
+						<tag name="format">Format</tag>
+						<tag name="paramEdit">Parameter editor</tag>
+						<tag name="enabled">Enabled</tag>
+						<tag name="remove">Remove</tag>
+						<tag name="reset">Restore</tag>
+						<tag name="timeout">Timeout</tag>
+						<tag name="uHour">hour(s)</tag>
+						<tag name="uMin">minute(s)</tag>
+						
+						<tag name="newFolder">New folder</tag>
+						<tag name="open">Open</tag>
+						<tag name="rename">Rename</tag>
+
+					</tags>
+					
+				<dialogs>
+						<dlgSetupLogin>
+								<caption>Datasource logon informations</caption>
+								<title1>Logon informations to</title1>
+								<title2>datasource</title2>
+								<description>You must give the logon informations. ReportSmart can save the settings and you have not give again in the future. (Be careful: Save passwords and user names means serious security risk)</description>
+								<ctlSetLogon>Set login name and password</ctlSetLogon>
+								<ctlNoSave>Don't save settings</ctlNoSave>
+								<ctlSaveForThisReport>Save settings for this report</ctlSaveForThisReport>
+								<ctlSaveForDS>Save settings for this datasource</ctlSaveForDS>
+								<lName>Login name:</lName>
+								<eName>login name</eName>
+								<lPassword>Password:</lPassword>
+								<ePassword>password</ePassword>
+							</dlgSetupLogin>
+							
+						<dlgCreateCollection>
+								<caption>Create collection</caption>
+								<description>With collections you can manage very easily your reports with different regards. You also can share the collections with your colleagues.</description>
+								<title>Create new collection</title>
+								<lCollectionName>Name of the new collection</lCollectionName>
+							</dlgCreateCollection>
+							
+						<dlgAddFolder>
+								<caption>New catalouge</caption>
+								<title1>Add a new catalouge to</title1>
+								<title2>collection</title2>
+								<description>With catalouges you can organize reports inside the collections. This is more simple to handle reports in catalouges!</description>
+								<lFolderName>Nem of new catalouge:</lFolderName>
+								<text name="noName">You have not given a name for catalouge!</text>
+							</dlgAddFolder>
+							
+						<AddReport>
+									<text name="title1">Add report to</text>
+									<text name="title2">collection</text>
+									<text name="details">Select a report file to add to collection. In the future you have not search the file system: you only have to choose from the collaction.</text>
+									<text name="group">Properties of new report:</text>
+									
+									<lAlias>Report name:</lAlias>
+									<lReportFile>Path of report file:</lReportFile>
+								</AddReport>
+								
+						<about>
+							</about>
+							
+						<generalDialogs>
+								<fileType name="allFiles">All files</fileType>
+								<fileType name="collection">Collections</fileType>
+								<fileType name="reportFile">Reportfiles</fileType>
+								<fileType name="excel">Ms Excel tables</fileType>
+								<fileType name="word">Ms Word documents</fileType>
+								<fileType name="xml">XML document</fileType>
+								<fileType name="html">HTML document</fileType>
+								<fileType name="pdf">PDF document</fileType>
+								
+							</generalDialogs>
+							
+					</dialogs>
+					
+				<wizards>
+						<dlgSendMail>
+								<caption>Send report via e-mail</caption>
+								<title>Electronic mail wizard</title>
+								
+								<page name="pExport">
+										<description>VPlease choose in wich formats you want send report!</description>
+									</page>
+							</dlgSendMail>
+							
+					</wizards>
+					
+				<forms>
+						<about>
+								<caption>About ReportSmart View</caption>
+							</about>
+							
+						<Settings>
+								<title>Settins</title>
+							</Settings>
+							
+						<MainForm>
+								<pHome>Home</pHome>
+								<pEdit>Edit</pEdit>
+								<pExport>Export and Print</pExport>
+								<pView>View</pView>
+								<hint name="open">Open Report</hint>
+								<hint name="import">Import collection</hint>
+								<hint name="export">Export collection</hint>
+								<hint name="addColl">Create collection</hint>
+								<hint name="addCatalog">Create catalouge</hint>
+								<hint name="addRpt">Add report</hint>
+								<hint name="editRpt">Edit report</hint>
+								<hint name="remove">Remove</hint>
+								<hint name="settings">Settings</hint>
+								<hint name="about">About</hint>
+								<hint name="print">Print</hint>
+								<hint name="mail">Send report via e-mail</hint>
+								<hint name="expPdf">Export to PDF format</hint>
+								<hint name="expWord">Export to Word document</hint>
+								<hint name="expExcel">Export to Excel table</hint>
+								<hint name="expHtml">Export to web page</hint>
+								<hint name="expXml">Export to XML file</hint>
+								<hint name="refresh">Refresh report</hint>
+								<hint name="groups">Show/hide groups</hint>
+								<hint name="zoomIn">Zoom in</hint>
+								<hint name="zoomOut">Zoom out</hint>
+								<hint name="fitWidth">Fit to width</hint>
+								<hint name="fitPage">Fit to window</hint>
+								<hint name="pFirst">First page</hint>
+								<hint name="pPrev">Previous page</hint>
+								<hint name="pNext">Next page</hint>
+								<hint name="pLast">Last page</hint>
+								
+								<!--0.2.rc.1-->
+								<hint name="offline">Switch to offline</hint>
+							</MainForm>
+							
+						<ReportViewer>
+							</ReportViewer>
+							
+						<CollectionEditor>
+								<text name="collectionNotSelected">You have not choosen a collection so I don't know where put the report!</text>
+								<text name="collectionNotSelected-Folder">You have not choosen a collection so I don't know where put the catalouge!</text>
+								<text name="itemNotSelected_del">Select an item before click delete!</text>
+								<text name="verify_rmFile">Do you really want to remove the following report:</text>
+								<text name="verify_rmFolder">Do you really want to remove thos catalog and it's all content:</text>
+								<text name="verify_eraseFavs">Do you really want to clear your Favorites?</text>
+								<text name="verify_rmCollection">Do you really want to remove this collection:</text>
+								<text name="nosaved_collection">Do you want to save the modifies of this collection:</text>
+							</CollectionEditor>
+							
+					</forms>
+					
+				<panels>
+						<general>
+								<title>General options</title>
+								<embeddedparam>Embedded parameter editor (Developer version)</embeddedparam>
+							 </general>
+							 
+						<language>
+								<title>Language selection</title>
+							</language>
+							 
+						<export>
+								<title>Print, Export and E-mail</title>
+							 </export>
+							 
+						<security>
+								<title>Security</title>
+							 </security>
+							 
+						<offline>
+								<title>Offline working</title>
+							</offline>
+							
+						<authitem>
+								<typelist>
+										<DatasourceSecurity>Datasource</DatasourceSecurity>
+										<report>Report</report>
+									</typelist>
+							</authitem>
+					</panels>
+				
+				<menus>
+						<collectionFolderContext>
+								<addFolder>New folder</addFolder>
+								<renameFolder>Rename folder</renameFolder>
+								<deleteFolder>Delete folder</deleteFolder>
+							</collectionFoldercontext>
+					</menus>
+				
+			</content>
+			
+	</ReportSmart-Locale>

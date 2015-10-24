@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <ProjectGuid>{BA4ADF74-A97D-43C1-9097-4ABAAD817142}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ReportSmart.Application</RootNamespace>
+    <ApplicationIcon>..\.gfx\iconset\ReportSmartApp.ico</ApplicationIcon>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Sx Xavier\AppData\Roaming\ICSharpCode\SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AssemblyName>rsview.debug</AssemblyName>
+    <OutputPath>..\bin</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>..\..\Releases\NightlyBuild\bin\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <AssemblyName>rsview.raw</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Demo release' ">
+    <OutputPath>..\..\Releases\NightlyBuild\bin\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <AssemblyName>rsview</AssemblyName>
+    <DefineConstants>DEMO</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Demo release' ">
+    <PostBuildEvent>md ..\.results
+..\..\..\CurrentVersion\bin\buildEnvironment.bat &gt; ..\.results\envBuild.txt</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Demo debug' ">
+    <OutputPath>.\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE;DEMO</DefineConstants>
+    <AssemblyName>rsview.demo.debug</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Demo debug' ">
+    <PostBuildEvent>..\..\CurrentVersion\bin\buildEnvironment.bat</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug 2' ">
+    <OutputPath>..\..\Releases\Debug\bin\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <AssemblyName>rsview.debug</AssemblyName>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug 2' ">
+    <PostBuildEvent>md ..\.results
+..\..\..\CurrentVersion\bin\buildEnvironment.bat &gt; ..\.results\envBuild.txt</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine" />
+    <Reference Include="CrystalDecisions.Shared" />
+    <Reference Include="CrystalDecisions.Web" />
+    <Reference Include="CrystalDecisions.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\Defaults\RsGfx.cs" />
+    <Compile Include="Application\RsFileDialogFilters.cs">
+    </Compile>
+    <Compile Include="Application\RsLocalization.cs" />
+    <Compile Include="Application\RsViewEngine.cs" />
+    <Compile Include="Application\RSCore.cs" />
+    <Compile Include="Application\RsViewProfileManager.cs" />
+    <Compile Include="Documents\Collections\RsFavoritesRoot.cs" />
+    <Compile Include="Resources\GFX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GFX.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\CollectionEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\CRSRptView.cs" />
+    <Compile Include="Windows\Forms\CRSSettings.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSAddExCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSAddFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSAddReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSAddReport.designer.cs">
+      <DependentUpon>RSAddReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSDemoAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSDemoAlert.designer.cs">
+      <DependentUpon>RSDemoAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSInitLang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSInitLang.designer.cs">
+      <DependentUpon>RSInitLang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSSendMailWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Dialogs\RSSetupLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Forms\RSAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Forms\RSAbout.designer.cs">
+      <DependentUpon>RSAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\Forms\RSMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Forms\RSSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Forms\RSSplash.designer.cs">
+      <DependentUpon>RSSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\Forms\view.MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Forms\view.MainForm.Designer.cs">
+      <DependentUpon>view.MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Forms\Forms\view.MainForm.ToolSet.cs">
+      <DependentUpon>view.MainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\RsCollectionManagement.Context.cs">
+      <DependentUpon>RsCollectionManagement.cs</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\RsCollectionManagement.Events.cs">
+      <DependentUpon>RsCollectionManagement.cs</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\RsCollectionManagement.Controls.cs">
+      <DependentUpon>RsCollectionManagement.cs</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\RsCollectionManagement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\RsListViewItem.cs">
+      <DependentUpon>RsCollectionManagement.cs</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\RSParamEditor.cs" />
+    <Compile Include="Properties\view.AssemblyInfo.cs" />
+    <Compile Include="view.cs" />
+    <Compile Include="Windows\Forms\RsCollectionControl.cs" />
+    <EmbeddedResource Include="Windows\Forms\Dialogs\RSAddReport.resx">
+      <DependentUpon>RSAddReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\Dialogs\RSDemoAlert.resx">
+      <DependentUpon>RSDemoAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\Dialogs\RSInitLang.resx">
+      <DependentUpon>RSInitLang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\Forms\RSAbout.resx">
+      <DependentUpon>RSAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\Forms\RSSplash.resx">
+      <DependentUpon>RSSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\Forms\view.MainForm.resx">
+      <DependentUpon>view.MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GFX.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GFX.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\rawdata.resx" />
+    <EmbeddedResource Include="Resources\Special.resx" />
+    <None Include="..\.dat\papersizes.xml">
+      <Link>Resources\papersizes.xml</Link>
+    </None>
+    <None Include="..\locale\de-de.xml">
+      <Link>Resources\Locales\de-de.xml</Link>
+    </None>
+    <None Include="..\locale\en-us.xml">
+      <Link>Resources\Locales\en-us.xml</Link>
+    </None>
+    <None Include="..\locale\hu-hu.xml">
+      <Link>Resources\Locales\hu-hu.xml</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <ProjectReference Include="..\Framework\ReportSmart.Common\ReportSmart.Common.csproj">
+      <Project>{834DA602-BD10-4BCF-848A-510EF75CF79B}</Project>
+      <Name>ReportSmart.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\ReportSmart.Network\ReportSmart.Network.csproj">
+      <Project>{063C9875-0159-409F-831E-956F14ABA7F4}</Project>
+      <Name>Halassy.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\ReportSmart.Security\ReportSmart.Security.csproj">
+      <Project>{73A4D166-6D81-4EF8-AFAA-45A42C56CF32}</Project>
+      <Name>Halassy.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\ReportSmart.Special\ReportSmart.Special.csproj">
+      <Project>{7D980308-4AA1-4B64-8CAF-FFAFB86FF52D}</Project>
+      <Name>Halassy.Special</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\ReportSmart.Graphics\ReportSmart.Graphics.csproj">
+      <Project>{AD72311A-FB51-4963-95D9-90D9AEB560FB}</Project>
+      <Name>Halassy.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\.source\RsControls\RsControls.csproj">
+      <Project>{BA5D16DC-89AC-4FA4-AA4F-1052CAC2421D}</Project>
+      <Name>RsControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\.source\RsCore\RsCore.csproj">
+      <Project>{03EF7F63-6724-4DE4-8978-73BE89C1AB4A}</Project>
+      <Name>RsCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\.source\RsReportProvider\RsDocuments.csproj">
+      <Project>{C31CE394-0BFE-4269-969F-9E473F46BA7C}</Project>
+      <Name>RsDocuments</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <PostBuildEvent>..\..\CurrentVersion\bin\buildEnvironment.bat</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PostBuildEvent>md ..\.results
+..\..\..\CurrentVersion\bin\buildEnvironment.bat &gt; ..\.results\envBuild.txt</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug 2' ">
+    <PostBuildEvent>dir &gt; c:\dir
+md ..\.results
+..\..\..\CurrentVersion\bin\buildEnvDbg.bat &gt; ..\.results\envBuild.txt</PostBuildEvent>
+  </PropertyGroup>
+</Project>

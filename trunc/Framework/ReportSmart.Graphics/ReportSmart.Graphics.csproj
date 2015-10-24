@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{AD72311A-FB51-4963-95D9-90D9AEB560FB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Halassy</RootNamespace>
+    <AssemblyName>Halassy.Graphics</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\Adam\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <OutputPath>..\..\..\..\..\.bin\</OutputPath>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>D:\repo\ReportSmart\trunc\Backup1\</UpgradeBackupLocation>
+    <OldToolsVersion>14.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drawing\GraphicsTools.cs" />
+    <Compile Include="Forms\AnimatedControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationMenu.cs" />
+    <Compile Include="Forms\AuthEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\BusyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\FolderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\FolderDialog.Designer.cs">
+      <DependentUpon>FolderDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\MyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Wizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ExtendedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\hcProgressBAr.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\PagedToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\PageSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\PageSelectorPage.cs">
+      <DependentUpon>PageSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PanelView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\PasswdEditor.cs" />
+    <Compile Include="Forms\SpecialView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Statusbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\StripToolGroup.cs">
+      <DependentUpon>PagedToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StripToolItem.cs">
+      <DependentUpon>PagedToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StripToolPage.cs">
+      <DependentUpon>PagedToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StripToolPageset.cs">
+      <DependentUpon>PagedToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Special\dwm.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReportSmart.Common\ReportSmart.Common.csproj">
+      <Project>{834DA602-BD10-4BCF-848A-510EF75CF79B}</Project>
+      <Name>Halassy.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportSmart.Security\ReportSmart.Security.csproj">
+      <Project>{73A4D166-6D81-4EF8-AFAA-45A42C56CF32}</Project>
+      <Name>Halassy.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportSmart.Special\ReportSmart.Special.csproj">
+      <Project>{7D980308-4AA1-4B64-8CAF-FFAFB86FF52D}</Project>
+      <Name>Halassy.Special</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>

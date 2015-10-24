@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{03EF7F63-6724-4DE4-8978-73BE89C1AB4A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ReportSmart</RootNamespace>
+    <AssemblyName>RsCore</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\globalits\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="FileHandling">
+      <HintPath>..\..\..\..\..\.bin\FileHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Halassy.Common">
+      <HintPath>..\..\..\..\..\.bin\Halassy.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Special">
+      <HintPath>..\..\..\..\..\.bin\Special.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebHelper">
+      <HintPath>..\..\..\..\..\.bin\WebHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\cs.core\rssecconv.cs">
+      <Link>Engine\rssecconv.cs</Link>
+    </Compile>
+    <Compile Include="Engine\Config\BasicClasses.cs">
+      <DependentUpon>RsProfileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\Config\RsCollectionConfig.cs">
+      <DependentUpon>RsProfileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\Config\RsProfileManager.cs" />
+    <Compile Include="Engine\Config\RsProfileConfig.cs">
+    </Compile>
+    <Compile Include="Engine\Config\RsSettingsConfig.cs">
+      <DependentUpon>RsProfileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\Config\RsUserInterfaceConfig.cs">
+      <DependentUpon>RsProfileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\RsApplicationInfo.cs" />
+    <Compile Include="Engine\RsCollectionManager.cs" />
+    <Compile Include="Engine\RsReportMailSender.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\ReportSmart.Network\ReportSmart.Network.csproj">
+      <Project>{063C9875-0159-409F-831E-956F14ABA7F4}</Project>
+      <Name>Halassy.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\ReportSmart.Security\ReportSmart.Security.csproj">
+      <Project>{73A4D166-6D81-4EF8-AFAA-45A42C56CF32}</Project>
+      <Name>Halassy.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RsReportProvider\RsDocuments.csproj">
+      <Project>{C31CE394-0BFE-4269-969F-9E473F46BA7C}</Project>
+      <Name>RsDocuments</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Communication\" />
+  </ItemGroup>
+</Project>
