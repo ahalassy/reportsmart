@@ -260,18 +260,6 @@
     <None Include="..\.dat\papersizes.xml">
       <Link>Resources\papersizes.xml</Link>
     </None>
-    <None Include="..\locale\de-de.xml">
-      <Link>Resources\Locales\de-de.xml</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="..\locale\en-us.xml">
-      <Link>Resources\Locales\en-us.xml</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="..\locale\hu-hu.xml">
-      <Link>Resources\Locales\hu-hu.xml</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AcroPDFLib">
@@ -324,6 +312,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReportSmartApp.ico" />
+    <Content Include="Resources\Locales\de-de.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Locales\en-us.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Locales\hu-hu.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <PostBuildEvent>..\..\CurrentVersion\bin\buildEnvironment.bat</PostBuildEvent>
