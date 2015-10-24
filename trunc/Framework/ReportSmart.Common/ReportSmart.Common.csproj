@@ -59,4 +59,7 @@
     <Compile Include="Versioning.cs" />
     <Compile Include="XmlTools.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ReportSmart.Documents.licenseheader" />
+  </ItemGroup>
 </Project>

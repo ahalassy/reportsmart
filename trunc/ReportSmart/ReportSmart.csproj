@@ -260,6 +260,7 @@
     <None Include="..\.dat\papersizes.xml">
       <Link>Resources\papersizes.xml</Link>
     </None>
+    <None Include="ReportSmart.licenseheader" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AcroPDFLib">

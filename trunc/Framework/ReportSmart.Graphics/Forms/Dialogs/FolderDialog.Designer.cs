@@ -1,12 +1,3 @@
-/*
- *
- * Licensing:			GPL
- * Original project:	InventoryForm.csproj
- *
- * Copyright: Adam ReportSmart (2010.11.24.)
- * 
- * 
- */
 namespace DefaultNamespace
 {
 	partial class Form1

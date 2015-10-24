@@ -101,4 +101,7 @@
   <ItemGroup>
     <Folder Include="Communication\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ReportSmart.Core.licenseheader" />
+  </ItemGroup>
 </Project>

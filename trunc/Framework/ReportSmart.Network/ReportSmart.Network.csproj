@@ -89,4 +89,7 @@
       <Name>ReportSmart.Common</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ReportSmart.Documents.licenseheader" />
+  </ItemGroup>
 </Project>

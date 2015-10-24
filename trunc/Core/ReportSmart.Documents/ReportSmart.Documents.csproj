@@ -101,4 +101,7 @@
       <Name>ReportSmart.Special</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ReportSmart.Documents.licenseheader" />
+  </ItemGroup>
 </Project>
