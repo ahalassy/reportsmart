@@ -15,7 +15,7 @@
     <NoStdLib>False</NoStdLib>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <FileUpgradeFlags></FileUpgradeFlags>
     <UpgradeBackupLocation>D:\repo\ReportSmart\trunc\Backup\</UpgradeBackupLocation>
     <OldToolsVersion>14.0</OldToolsVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
