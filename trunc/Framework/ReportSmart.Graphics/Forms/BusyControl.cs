@@ -29,12 +29,11 @@
 
 #endregion
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Drawing.Text;
 using System.Windows.Forms;
 
-namespace ReportSmart.Controls {
-		internal class CBusyControl: Control {
+namespace ReportSmart.Controls
+{
+    internal class CBusyControl: Control {
 				private Control _ctl;
 				
 				public void ShowMessage(string aMsg) {

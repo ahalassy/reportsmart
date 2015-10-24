@@ -30,14 +30,13 @@
 #endregion
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Text;
 
-namespace ReportSmart.Special {
-		public static class DotNetAsmInfo {
+namespace ReportSmart.Special
+{
+    public static class DotNetAsmInfo {
 				[DllImport("DotNetAsmInfo.dll", CharSet= CharSet.Ansi, CallingConvention = CallingConvention.StdCall)]
 				public static extern string GetAssemblyInfoString(string aAssemblyFile);
 				

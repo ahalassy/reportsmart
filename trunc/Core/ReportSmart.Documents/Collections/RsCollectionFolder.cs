@@ -29,18 +29,14 @@
 
 #endregion
 
-using System;
-using System.Collections;
 using System.Collections.Generic;
 
-using ReportSmart;
-using ReportSmart.Documents;
-
-namespace ReportSmart.Documents.Collections {
-		/// <summary>
-		/// Description of RsCollectionFolder.
-		/// </summary>
-		public class RsCollectionFolder: RsCollectionItem {	
+namespace ReportSmart.Documents.Collections
+{
+    /// <summary>
+    /// Description of RsCollectionFolder.
+    /// </summary>
+    public class RsCollectionFolder: RsCollectionItem {	
 		
 				public CReportFolder ReportFolder { get { return (CReportFolder)ReportItem; }}
 		

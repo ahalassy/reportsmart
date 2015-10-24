@@ -29,23 +29,16 @@
 
 #endregion
 
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
-using System.Xml;
-using System.Xml.Serialization;
 using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Engine;
-using ReportSmart.Engine.Config;
-using ReportSmart.Documents;
+using System.Xml;
 using ReportSmart.Documents.Collections;
+using ReportSmart.Engine.Config;
 
-namespace ReportSmart.Engine {
-		public class RsProfileManager {
+namespace ReportSmart.Engine
+{
+    public class RsProfileManager {
 				
 				#region Static methods:
 				public static int GetProfileVersion(string aProfile) {

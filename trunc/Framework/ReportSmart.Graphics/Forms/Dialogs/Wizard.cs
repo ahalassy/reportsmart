@@ -33,15 +33,13 @@ using System.Collections;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
-
-using ReportSmart;
-using ReportSmart.Forms;
-using ReportSmart.Localization;
 using ReportSmart.Controls;
- 
-namespace ReportSmart.Forms {
+using ReportSmart.Localization;
 
-		public abstract class CWizardPanel: CLocalizedPanel {
+namespace ReportSmart.Forms
+{
+
+    public abstract class CWizardPanel: CLocalizedPanel {
 				public CWizardDialog HostDialog;
 				protected XmlNode LocaleData;
 				private Label _lDescription;

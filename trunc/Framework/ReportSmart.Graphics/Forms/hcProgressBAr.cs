@@ -28,18 +28,16 @@
 //*****************************************************************************
 
 #endregion
+using System.ComponentModel;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 using ReportSmart.Graph;
- using ReportSmart.Graph.Drawing;
- 
- using System;
- using System.ComponentModel;
- using System.Drawing;
- using System.Drawing.Drawing2D;
- using System.Windows;
- using System.Windows.Forms;
-  
- namespace ReportSmart.Controls {
- 		public class CProgressBar: Control {
+using ReportSmart.Graph.Drawing;
+
+namespace ReportSmart.Controls
+{
+    public class CProgressBar: Control {
  				private int _min, _max, _val;
  				private bool _shText, _shPercent, _reflection;
  				private Color _textColor, _textBG;

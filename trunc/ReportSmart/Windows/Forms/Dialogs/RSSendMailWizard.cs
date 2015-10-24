@@ -32,17 +32,13 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Controls;
+using ReportSmart.Application;
 using ReportSmart.Forms;
 using ReportSmart.Localization;
-using ReportSmart.Network.Email;
 
-using ReportSmart.Application;
-
-namespace ReportSmart.Controls {
-		internal class CdlgSendMail: CWizardDialog {
+namespace ReportSmart.Controls
+{
+    internal class CdlgSendMail: CWizardDialog {
 		
 				private class CSetupExport: CWizardPanel {
 						private ImageList _DocIcons;

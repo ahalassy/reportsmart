@@ -30,26 +30,21 @@
 #endregion
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Graph;
+using ReportSmart.Documents.Collections;
 using ReportSmart.Graph.Drawing;
 using ReportSmart.Localization;
 
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
-
-namespace ReportSmart.Windows.Forms {
-		/// <summary>
-		/// Description of RsCollectionTreeNode.
-		/// </summary>
-		public class RsCollectionTreeNode: Control, ILocalizedControl {
+namespace ReportSmart.Windows.Forms
+{
+    /// <summary>
+    /// Description of RsCollectionTreeNode.
+    /// </summary>
+    public class RsCollectionTreeNode: Control, ILocalizedControl {
 				
 				#region Static methods:
 				public static RsCollectionTreeNode CreateNode(

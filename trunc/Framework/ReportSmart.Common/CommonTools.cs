@@ -35,12 +35,10 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Xml;
-using System.Windows.Forms;
 
-using ReportSmart.Classes;
-
-namespace ReportSmart {
-		public static class CommonTools {
+namespace ReportSmart
+{
+    public static class CommonTools {
 				public const string MY_NAME = "ReportSmart Studio";
 
 				public static System.Array ResizeArray(System.Array aArray, int aSize) {
@@ -512,9 +510,10 @@ namespace ReportSmart {
 			}
 	}
 	
-namespace ReportSmart.Controls {
+namespace ReportSmart.Controls
+{
 
-		public struct ControlProperties {
+    public struct ControlProperties {
 				// Sizes:
 				public const int ButtonWidth = 128;
 				public const int ButtonHeight = 32;
@@ -547,9 +546,10 @@ namespace ReportSmart.Controls {
 			}
 	}
 
-namespace ReportSmart.Graph {
+namespace ReportSmart.Graph
+{
 
-		public class Coloring {
+    public class Coloring {
 				public static Color MergeColors(Color clSource, Color clTarget, double aScale) {
 							return Color.FromArgb(
 									(byte)(Math.Round(clSource.A * aScale + clTarget.A * (1 - aScale))),

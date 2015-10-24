@@ -29,13 +29,13 @@
 
 #endregion
 
-using ReportSmart;
 
 using System;
 using System.Xml;
 
-namespace ReportSmart.Security {
-		public static class PublicLicenseCode {
+namespace ReportSmart.Security
+{
+    public static class PublicLicenseCode {
 				private const string __VERCH = "ABCDEFGHIJKLMNOPQRSTVWXYZ";
 		
 				public static string GeneratePID(string aProjectId, string aAppId, string aAppVer) {

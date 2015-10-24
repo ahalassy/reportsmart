@@ -29,27 +29,13 @@
 
 #endregion
 
-using System;
-using System.Diagnostics;
-using System.IO;
-using System.Threading;
-using System.Timers;
-using System.Xml;
 
-using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
-using CrystalDecisions.Windows.Forms;
 
-using ReportSmart;
-using ReportSmart.Network;
-using ReportSmart.Network.Email;
-using ReportSmart.Security;
-using ReportSmart.Special;
-using ReportSmart.Special.WinApi;
+namespace ReportSmart.Documents
+{
 
-namespace ReportSmart.Documents {
-		
-		public enum RsHtmlVersion {
+    public enum RsHtmlVersion {
 				Html40,
 				Html32
 			}

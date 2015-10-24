@@ -28,22 +28,21 @@
 //*****************************************************************************
 
 #endregion
-using ReportSmart;
-using ReportSmart.Graph;
-using ReportSmart.Graph.Drawing;
-using ReportSmart.Localization;
-using ReportSmart.Security;
-
-using System; 
+using System;
 using System.Collections;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using System.Xml;
+using ReportSmart.Graph;
+using ReportSmart.Graph.Drawing;
+using ReportSmart.Localization;
+using ReportSmart.Security;
 
-namespace ReportSmart.Controls {
+namespace ReportSmart.Controls
+{
 
-		public class CAuthEditor: Panel, ILocalizedControl {
+    public class CAuthEditor: Panel, ILocalizedControl {
 				protected class CAuthItem: Control {
 						private const int __HEIGHT = 48;
 						private const int __EXP_HEIGHT = 128;

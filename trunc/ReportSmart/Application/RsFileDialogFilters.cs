@@ -29,37 +29,11 @@
 
 #endregion
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Reflection;
-using System.Resources;
-using System.Threading;
-using System.Windows.Forms;
 using System.Xml;
 
-using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Shared;
-
-using ReportSmart;
-using ReportSmart.Forms;
-using ReportSmart.Localization;
-using ReportSmart.Network;
-using ReportSmart.Network.Email;
-using ReportSmart.Security;
-using ReportSmart.Special;
-using ReportSmart.Special.WinApi;
-
-using ReportSmart.Engine;
-using ReportSmart.Engine.Config;
-using ReportSmart.Controls;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
- 
-namespace ReportSmart.Application {
-		internal static class FileDialogFilters {
+namespace ReportSmart.Application
+{
+    internal static class FileDialogFilters {
 		
 				public static string BuildCollectionFilter(XmlNode aDialogLocale) {
 						string lResult = XmlTools.getXmlNodeByAttrVal("name", "allFiles", aDialogLocale).InnerText + " (*.*)|*.*";

@@ -29,11 +29,10 @@
 
 #endregion
 
-using System;
-using ReportSmart;
 
-namespace ReportSmart.Classes {
-		internal interface IItemClass {
+namespace ReportSmart.Classes
+{
+    internal interface IItemClass {
 				string toString();
 
 				string Name {get;}

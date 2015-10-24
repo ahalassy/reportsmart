@@ -31,16 +31,13 @@
 
 using System.Drawing;
 using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Controls;
+using ReportSmart.Application;
 using ReportSmart.Forms;
 using ReportSmart.Localization;
 
-using ReportSmart.Application;
-
-namespace ReportSmart.Controls {
-		internal class CdlgAddFolder: CMyDialog {
+namespace ReportSmart.Controls
+{
+    internal class CdlgAddFolder: CMyDialog {
 				private Label _lFolderName;
 				private TextBox _eFolderName;
 		

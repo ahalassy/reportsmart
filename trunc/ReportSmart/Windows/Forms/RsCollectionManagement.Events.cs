@@ -30,22 +30,15 @@
 #endregion
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Windows.Forms;
-
+using ReportSmart.Application;
+using ReportSmart.Documents.Collections;
 using ReportSmart.Localization;
 
-using ReportSmart;
-using ReportSmart.Application;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
-using ReportSmart.Windows;
-using ReportSmart.Windows.Forms;
-
-namespace ReportSmart.Windows.Forms {
-		public partial class RsCollectionManagement: Panel, ILocalizedControl {
+namespace ReportSmart.Windows.Forms
+{
+    public partial class RsCollectionManagement: Panel, ILocalizedControl {
 		
 				protected void AssignEventHandlers() {
 						CollectionBrowser.CollectionNodeSelected += new NodeSelectedEvent(ehSelectNode);

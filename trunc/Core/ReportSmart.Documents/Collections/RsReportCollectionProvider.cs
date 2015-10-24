@@ -31,15 +31,12 @@
 
 using System;
 
-using ReportSmart;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
-
-namespace ReportSmart.Documents.Collections {
-		/// <summary>
-		/// Description of RsReportCollectionProvider.
-		/// </summary>
-		public class RsReportCollectionProvider: RsCollectionProvider {
+namespace ReportSmart.Documents.Collections
+{
+    /// <summary>
+    /// Description of RsReportCollectionProvider.
+    /// </summary>
+    public class RsReportCollectionProvider: RsCollectionProvider {
 		
 				public RsReportCollection ReportCollection { get; protected set; }
 				

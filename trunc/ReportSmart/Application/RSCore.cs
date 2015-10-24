@@ -29,15 +29,14 @@
 
 #endregion
 
-using ReportSmart;
 
-using System;
 using System.Reflection;
 using System.Resources;
 using System.Xml;
 
-namespace ReportSmart {
-		internal static class RSResources {
+namespace ReportSmart
+{
+    internal static class RSResources {
 				private static ResourceManager
 							_resGFX = null,
 							_resSpec = null,

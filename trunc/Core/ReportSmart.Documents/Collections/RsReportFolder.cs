@@ -29,14 +29,13 @@
 
 #endregion
 
-using System;
 using System.Collections;
-using System.IO;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace ReportSmart.Documents.Collections {
-		public class CReportFolder: CReportItem {
+namespace ReportSmart.Documents.Collections
+{
+    public class CReportFolder: CReportItem {
 				private ArrayList _SubItems;
 				private bool _Expanded;
 				

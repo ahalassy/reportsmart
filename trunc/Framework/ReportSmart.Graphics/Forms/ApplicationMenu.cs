@@ -30,13 +30,11 @@
 #endregion
 using System;
 using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Special;
 using ReportSmart.Special.WinApi;
 
-namespace ReportSmart.Forms {
-		public class ApplicationMenu {
+namespace ReportSmart.Forms
+{
+    public class ApplicationMenu {
 				public IntPtr MenuHandle { get; protected set; }
 				
 				public void AppendItem(string aText) {

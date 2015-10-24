@@ -33,16 +33,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Drawing.Text;
 using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Controls;
-using ReportSmart.Graph;
 using ReportSmart.Graph.Drawing;
 
-namespace ReportSmart.Forms {
-		public enum StripToolItemType {
+namespace ReportSmart.Forms
+{
+    public enum StripToolItemType {
 				Icon,
 				Button,
 				Separator,

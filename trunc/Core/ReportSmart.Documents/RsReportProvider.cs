@@ -29,31 +29,17 @@
 
 #endregion
 
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Threading;
-using System.Timers;
 //using System.Windows.Forms;
-using System.Xml;
 
 
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
-using CrystalDecisions.Windows.Forms;
 
-using ReportSmart;
-using ReportSmart.Network;
-using ReportSmart.Network.Email;
-using ReportSmart.Security;
-using ReportSmart.Special;
-using ReportSmart.Special.WinApi;
+namespace ReportSmart.Documents
+{
 
-namespace ReportSmart.Documents {
-
-		public enum RsExportFormat {
+    public enum RsExportFormat {
 				PortableFormatDocument,
 				ExcelDocument,
 				WordDocument,

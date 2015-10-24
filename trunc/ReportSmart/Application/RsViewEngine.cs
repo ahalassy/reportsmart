@@ -30,7 +30,6 @@
 #endregion
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -39,29 +38,22 @@ using System.Resources;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
-
-using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Shared;
-
-using ReportSmart;
+using ReportSmart.Controls;
+using ReportSmart.Documents.Collections;
+using ReportSmart.Engine;
+using ReportSmart.Engine.Config;
 using ReportSmart.Forms;
 using ReportSmart.Localization;
-using ReportSmart.Network;
 using ReportSmart.Network.Email;
 using ReportSmart.Security;
 using ReportSmart.Special;
 using ReportSmart.Special.WinApi;
-
-using ReportSmart.Engine;
-using ReportSmart.Engine.Config;
-using ReportSmart.Controls;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
 using ReportSmart.Windows.Forms;
- 
-namespace ReportSmart.Application {
 
-		public class CFavoritesCollection: RsReportCollection {
+namespace ReportSmart.Application
+{
+
+    public class CFavoritesCollection: RsReportCollection {
 				protected override CReportRootFolder createReportRootFolder(string aCollectionName) {
 						return new CReportFavoritesRoot(RsViewEngine.ALIAS_FAVORITES, this);
 					}

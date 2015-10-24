@@ -28,22 +28,14 @@
 //*****************************************************************************
 
 #endregion
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Drawing.Text;
-using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Controls;
-using ReportSmart.Graph;
-using ReportSmart.Graph.Drawing;
 
 
-namespace ReportSmart.Forms {
-		public class StripToolGroup {
+namespace ReportSmart.Forms
+{
+    public class StripToolGroup {
 				// Members:
 				private ArrayList _HostPages;
 				private List<StripToolItem> _Items;

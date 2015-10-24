@@ -29,21 +29,16 @@
 
 #endregion
 
-using System;
-using System.Drawing;
 using System.Windows.Forms;
-
-using ReportSmart.Localization;
-
-using ReportSmart;
 using ReportSmart.Application;
+using ReportSmart.Localization;
 
 namespace ReportSmart.Controls
 {
-	/// <summary>
-	/// Description of Form1.
-	/// </summary>
-	internal partial class CdlgDemoAlert: Form, ILocalizedControl {
+    /// <summary>
+    /// Description of Form1.
+    /// </summary>
+    internal partial class CdlgDemoAlert: Form, ILocalizedControl {
 			private const int SH_REMAIN = 1;
 			private const int SH_EXPIRED = 0;
 	

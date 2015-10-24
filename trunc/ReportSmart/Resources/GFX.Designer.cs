@@ -8,18 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ReportSmart.Application.Resources {
-	using System;
-	
-	
-	/// <summary>
-	///   Rögzített típusú erőforrás-osztály, például honosított karakterláncok stb. megkereséséhez.
-	/// </summary>
-	// Ezt az osztályt a StronglyTypedResourceBuilder osztály hozta létre automatikusan
-	// a ResGen, a Visual Studio vagy hasonló eszköz használatával.
-	// Tag hozzáadásához vagy eltávolításához futtassa a .ResX fájlt, majd futtassa újra a ResGen
-	// alkalmazást a /str paraméterrel, vagy építse újra a VS projektet.
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "2.0.0.0")]
+namespace ReportSmart.Application.Resources
+{
+
+
+    /// <summary>
+    ///   Rögzített típusú erőforrás-osztály, például honosított karakterláncok stb. megkereséséhez.
+    /// </summary>
+    // Ezt az osztályt a StronglyTypedResourceBuilder osztály hozta létre automatikusan
+    // a ResGen, a Visual Studio vagy hasonló eszköz használatával.
+    // Tag hozzáadásához vagy eltávolításához futtassa a .ResX fájlt, majd futtassa újra a ResGen
+    // alkalmazást a /str paraméterrel, vagy építse újra a VS projektet.
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "2.0.0.0")]
 	[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
 	[global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
 	internal class GFX {

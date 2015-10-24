@@ -29,26 +29,13 @@
 
 #endregion
 
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Threading;
-using System.Timers;
-using System.Xml;
-using ReportSmart.Controls;
-using ReportSmart.Network;
-using ReportSmart.Network.Email;
-using ReportSmart.Security;
-using ReportSmart.Special;
-using ReportSmart.Special.WinApi;
-
-using ReportSmart;
 using ReportSmart.Documents;
+using ReportSmart.Network.Email;
 
-namespace ReportSmart.Engine {
-		public class RsReportMailSender {
+namespace ReportSmart.Engine
+{
+    public class RsReportMailSender {
 				protected List<string> AttachmentFiles;
 				
 				public CMapiMail Mail { get; protected set; }

@@ -31,21 +31,18 @@
 
 using System;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
 using System.Xml;
-
-using ReportSmart;
+using ReportSmart.Application;
 using ReportSmart.Localization;
 
-using ReportSmart.Application;
-
-namespace ReportSmart.Controls {
-	/// <summary>
-	/// Description of Form1.
-	/// </summary>
-	internal partial class CRSAbout: CLocalizedForm {
+namespace ReportSmart.Controls
+{
+    /// <summary>
+    /// Description of Form1.
+    /// </summary>
+    internal partial class CRSAbout: CLocalizedForm {
 		public override string GetInstanceName() { return "CRSAbout"; }
 	
 		public override void ApplyLocale(CLocalization aLocale) {

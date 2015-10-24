@@ -29,22 +29,14 @@
 
 #endregion
 
-using System;
-using System.Drawing;
 using System.Windows.Forms;
-
+using ReportSmart.Documents.Collections;
 using ReportSmart.Localization;
 
-using ReportSmart;
-using ReportSmart.Application;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
-using ReportSmart.Windows;
-using ReportSmart.Windows.Forms;
 
-
-namespace ReportSmart.Windows.Forms {
-		public partial class RsCollectionManagement: Panel, ILocalizedControl {
+namespace ReportSmart.Windows.Forms
+{
+    public partial class RsCollectionManagement: Panel, ILocalizedControl {
 				
 				protected class RsListViewItem: ListViewItem {
 						public RsCollectionItem CollectionItem { get; protected set; }

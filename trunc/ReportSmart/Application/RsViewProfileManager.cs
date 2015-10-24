@@ -29,25 +29,17 @@
 
 #endregion
 
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
-using System.Windows.Forms;
-using System.Xml;
- 
-using ReportSmart;
-using ReportSmart.Localization;
-
+using ReportSmart.Controls;
+using ReportSmart.Documents.Collections;
 using ReportSmart.Engine;
 using ReportSmart.Engine.Config;
-using ReportSmart.Controls;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
- 
-namespace ReportSmart.Application {
-        internal class RsViewProfileManager: RsProfileManager {
+using ReportSmart.Localization;
+
+namespace ReportSmart.Application
+{
+    internal class RsViewProfileManager: RsProfileManager {
         
         		public const int CURRENT_PROFILE_VERSION = 1;
 

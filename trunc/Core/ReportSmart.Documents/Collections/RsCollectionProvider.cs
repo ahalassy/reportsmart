@@ -29,11 +29,11 @@
 
 #endregion
 
-using System;
 
-namespace ReportSmart.Documents.Collections {
-	
-	public enum RsCollectionProviderType {
+namespace ReportSmart.Documents.Collections
+{
+
+    public enum RsCollectionProviderType {
 			Custom,
 			Favorites,
 			FileSystem,

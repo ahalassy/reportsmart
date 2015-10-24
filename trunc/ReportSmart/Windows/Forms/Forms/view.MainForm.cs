@@ -29,25 +29,18 @@
 
 #endregion
 
-using ReportSmart;
-using ReportSmart.Controls;
-using ReportSmart.GUI;
-using ReportSmart.Localization;
-using ReportSmart.Special.WinApi;
 using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Windows.Forms;
 using System.Xml;
-
 using ReportSmart.Application;
-using ReportSmart.Windows.Forms;
+using ReportSmart.Controls;
+using ReportSmart.Localization;
 
-namespace ReportSmart {
-	/// <summary>
-	/// Description of MainForm.
-	/// </summary>
-	internal partial class CReportSmartForm : CLocalizedForm {
+namespace ReportSmart
+{
+    /// <summary>
+    /// Description of MainForm.
+    /// </summary>
+    internal partial class CReportSmartForm : CLocalizedForm {
 		private int _FontSize = 10;
 		
 		private CRSReportViewerHost _CurrentView = null;

@@ -33,18 +33,14 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
-
-using ReportSmart;
-using ReportSmart.Localization;
-
 using ReportSmart.Application;
-using ReportSmart.Controls;
-using ReportSmart.Documents;
 using ReportSmart.Documents.Collections;
+using ReportSmart.Localization;
 using ReportSmart.Windows.Forms;
- 
-namespace ReportSmart.Controls {
-		internal class CCollectionEditor: CLocalizedPanel {
+
+namespace ReportSmart.Controls
+{
+    internal class CCollectionEditor: CLocalizedPanel {
 				private const string LOCALE_ALIAS = "CollectionEditor";
 				
 				private const string NOCOLLECTION_FILE = "collectionNotSelected";

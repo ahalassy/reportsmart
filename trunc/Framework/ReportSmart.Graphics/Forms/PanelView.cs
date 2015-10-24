@@ -31,12 +31,11 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-
-using ReportSmart;
 using ReportSmart.Graph.Drawing;
 
-namespace ReportSmart.Controls {
-		public struct SMargins {
+namespace ReportSmart.Controls
+{
+    public struct SMargins {
 				private int _all;
 		
 				public int Top, Left, Bottom, Right;

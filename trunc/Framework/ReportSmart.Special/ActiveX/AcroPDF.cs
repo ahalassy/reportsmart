@@ -30,8 +30,6 @@
 #endregion
 
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using AcroPDFLib;
 
 namespace ReportSmart.Special.ActiveX.AcroPDF
 {

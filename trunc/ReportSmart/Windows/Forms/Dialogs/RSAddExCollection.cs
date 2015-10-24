@@ -28,16 +28,15 @@
 //*****************************************************************************
 
 #endregion
- 
-using ReportSmart;
-using ReportSmart.Controls;
-using ReportSmart.Forms;
-using ReportSmart.Localization;
+
 using System.Drawing;
 using System.Windows.Forms;
+using ReportSmart.Forms;
+using ReportSmart.Localization;
 
-namespace ReportSmart.Controls {
-		internal class CdlgCreateCollection: CMyDialog {
+namespace ReportSmart.Controls
+{
+    internal class CdlgCreateCollection: CMyDialog {
 				private Label _lCollectionName;
 				private TextBox _eCollectionName;
 		

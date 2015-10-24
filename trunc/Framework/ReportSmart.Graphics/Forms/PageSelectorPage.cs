@@ -28,24 +28,12 @@
 //*****************************************************************************
 
 #endregion
-using System;
-using System.Collections;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Drawing.Text;
-using System.Timers;
 using System.Windows.Forms;
 
-using ReportSmart;
-using ReportSmart.Forms;
-using ReportSmart.Graph.Drawing;
-using ReportSmart.GUI;
-using ReportSmart.Special;
-using ReportSmart.Special.WinApi;
 
-
-namespace ReportSmart.Controls {
-	public class CPageSelectorPage {
+namespace ReportSmart.Controls
+{
+    public class CPageSelectorPage {
 			public event PageCloseNotify CloseNotify;
 			public event PageEventNotify PageSelected;
 	

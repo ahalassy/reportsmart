@@ -35,15 +35,14 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Timers;
 using System.Windows.Forms;
-
-using ReportSmart;
 using ReportSmart.Forms;
 using ReportSmart.Graph.Drawing;
 using ReportSmart.GUI;
 using ReportSmart.Special;
 using ReportSmart.Special.WinApi;
 
-namespace ReportSmart.Controls {
+namespace ReportSmart.Controls
+{
     public enum TSnapping{
             snapNone,
             snapLeft,

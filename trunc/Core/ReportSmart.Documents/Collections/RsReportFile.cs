@@ -29,16 +29,11 @@
 
 #endregion
 
-using System;
-using System.Collections;
-using System.IO;
-using System.Windows.Forms;
 using System.Xml;
 
-using ReportSmart;
-
-namespace ReportSmart.Documents.Collections {
-		public class CReportFile: CReportItem {
+namespace ReportSmart.Documents.Collections
+{
+    public class CReportFile: CReportItem {
 				private string _File;
 			
 				public string ReportFile {

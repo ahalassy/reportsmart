@@ -29,17 +29,13 @@
 
 #endregion
 
-using System;
- using System.Collections;
- using System.Collections.Generic;
- using System.IO;
- using System.Text;
- using System.Xml;
- using System.Xml.Serialization;
- using System.Xml.Schema;
+using System.IO;
+using System.Xml;
+using System.Xml.Serialization;
 
-namespace ReportSmart.Engine.Config {
-		public enum RsCollectionType {
+namespace ReportSmart.Engine.Config
+{
+    public enum RsCollectionType {
 				Custom,
 				Favorites,
 				History

@@ -30,22 +30,18 @@
 #endregion
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
- 
 using CrystalDecisions.Shared;
-
-using ReportSmart.Localization;
-using ReportSmart.Graph;
-
-using ReportSmart;
 using ReportSmart.Application;
+using ReportSmart.Graph;
+using ReportSmart.Localization;
 
-namespace ReportSmart.Controls {
-		internal enum RsParameterEditingStyle {
+namespace ReportSmart.Controls
+{
+    internal enum RsParameterEditingStyle {
 				Plain,
 				Alias,
 				Explained

@@ -34,14 +34,12 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
-
-using ReportSmart;
 using ReportSmart.Controls;
 using ReportSmart.Graph;
-using ReportSmart.Graph.Drawing;
 
-namespace ReportSmart.Forms {
-		public delegate void ToolItemAction(StripToolItem aSender);
+namespace ReportSmart.Forms
+{
+    public delegate void ToolItemAction(StripToolItem aSender);
 
 		public class CPagedToolStrip: Control {
 				// Constant:

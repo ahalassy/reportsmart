@@ -32,16 +32,13 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Controls;
+using ReportSmart.Application;
 using ReportSmart.Forms;
 using ReportSmart.Localization;
 
-using ReportSmart.Application;
-
-namespace ReportSmart.Controls {
-		internal enum TLogonInfoSave {
+namespace ReportSmart.Controls
+{
+    internal enum TLogonInfoSave {
 				lisNoSave = 0,
 				lisSaveForReport = 1,
 				lisSaveForDataSource = 2

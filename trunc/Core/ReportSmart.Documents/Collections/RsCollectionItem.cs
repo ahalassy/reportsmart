@@ -29,13 +29,13 @@
 
 #endregion
 
-using System;
 
-namespace ReportSmart.Documents.Collections {
-		/// <summary>
-		/// Description of RsCollectionItem.
-		/// </summary>
-		public class RsCollectionItem {
+namespace ReportSmart.Documents.Collections
+{
+    /// <summary>
+    /// Description of RsCollectionItem.
+    /// </summary>
+    public class RsCollectionItem {
 		
 				public CReportItem ReportItem { get; protected set; }
 				

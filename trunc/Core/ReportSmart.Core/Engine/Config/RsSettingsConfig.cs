@@ -29,21 +29,15 @@
 
 #endregion
 
-using System;
- using System.Collections;
- using System.Collections.Generic;
- using System.IO;
- using System.Text;
- using System.Xml;
- using System.Xml.Serialization;
- using System.Xml.Schema;
+using System.Xml.Serialization;
 
-namespace ReportSmart.Engine.Config {
-		/// <summary>
-		/// Description of RsSettings.
-		/// </summary>
-		
-		[XmlTypeAttribute(TypeName="settings")]
+namespace ReportSmart.Engine.Config
+{
+    /// <summary>
+    /// Description of RsSettings.
+    /// </summary>
+
+    [XmlTypeAttribute(TypeName="settings")]
 		public class RsSettingsConfig {
 		
 				[XmlElementAttribute(ElementName = "locale")]

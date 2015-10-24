@@ -30,18 +30,13 @@
 #endregion
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Windows.Forms;
-using System.Xml;
-
-using ReportSmart;
-using ReportSmart.Engine.Config;
 using ReportSmart.Documents.Collections;
+using ReportSmart.Engine.Config;
 
-namespace ReportSmart.Engine {
-		public class RsCollectionManager {
+namespace ReportSmart.Engine
+{
+    public class RsCollectionManager {
 		
 				public static RsReportCollection CreateReportCollection(RsCollectionConfig aConfig) {
 						RsReportCollection lResult = new RsReportCollection();

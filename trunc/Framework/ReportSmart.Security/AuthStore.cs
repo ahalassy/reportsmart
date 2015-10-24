@@ -29,13 +29,13 @@
 
 #endregion
 
-using ReportSmart;
 
 using System;
 using System.Xml;
 
-namespace ReportSmart.Security {
-		public static class PasswordTools {
+namespace ReportSmart.Security
+{
+    public static class PasswordTools {
 				private static string _ENCRYPT_DIGITS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012356789";
 				private static string _ENCRYPT_DIGITS_CAPITAL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ012356789";
 				

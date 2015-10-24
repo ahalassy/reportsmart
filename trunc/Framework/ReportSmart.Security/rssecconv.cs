@@ -29,12 +29,12 @@
 
 #endregion
 
-using ReportSmart;
-using ReportSmart.Security;
 using System.Xml;
+using ReportSmart.Security;
 
-namespace ReportSmart {
-		public static class RsOldSecurity {
+namespace ReportSmart
+{
+    public static class RsOldSecurity {
 				public static bool IsOldFormat(string aFile) {
 						XmlDocument lDoc = new XmlDocument();
 						lDoc.Load(aFile);

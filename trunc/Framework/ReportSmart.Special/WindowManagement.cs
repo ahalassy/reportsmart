@@ -30,12 +30,12 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 
 using ReportSmart.Special.WinApi;
- 
-namespace ReportSmart.Special {
- 		public static class WindowHelper {
+
+namespace ReportSmart.Special
+{
+    public static class WindowHelper {
  		
  				#region STATIC:
  				#region class SystemMetrics

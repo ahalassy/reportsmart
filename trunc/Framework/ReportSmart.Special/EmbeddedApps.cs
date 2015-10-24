@@ -30,15 +30,16 @@
 #endregion
 
 using System;
- using System.Collections;
- using System.Diagnostics;
- using System.Runtime.CompilerServices;
- using System.Runtime.InteropServices;
- using System.Windows.Forms; 
- 
- namespace ReportSmart.Special {
- 		namespace WinApi {
- 				public static class WindowManagement {
+using System.Collections;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
+
+namespace ReportSmart.Special
+{
+    namespace WinApi
+    {
+        public static class WindowManagement {
  						#region FIELDS:
  						#region FIELDS - CONSTANTS:
  						public const int SWP_NOSIZE = 0x0001;

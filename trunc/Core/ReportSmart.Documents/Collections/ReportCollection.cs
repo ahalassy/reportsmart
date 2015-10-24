@@ -30,18 +30,13 @@
 #endregion
 
 using System;
-using System.Collections;
-using System.IO;
 using System.Windows.Forms;
 using System.Xml;
 
-using ReportSmart;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
+namespace ReportSmart.Documents.Collections
+{
 
-namespace ReportSmart.Documents.Collections {
-		
-	public class RsReportCollection {
+    public class RsReportCollection {
 			public const string XMLNODE_ITEM = "item";
 			public const string XMLNODE_FOLDER = "folder";
 			public const string XMLNODE_REPORT = "file";

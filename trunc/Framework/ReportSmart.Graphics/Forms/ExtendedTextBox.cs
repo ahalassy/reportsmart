@@ -28,10 +28,10 @@
 //*****************************************************************************
 
 #endregion
-using ReportSmart.Graph;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using ReportSmart.Graph;
 
 namespace ReportSmart.Controls {
 		public class CExtendedTextBox: TextBox {

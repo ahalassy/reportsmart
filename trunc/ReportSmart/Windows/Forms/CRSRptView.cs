@@ -33,40 +33,32 @@
  * 2009-09-23 (Adam ReportSmart)
  * 
  */
- 
+
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Threading;
 using System.Timers;
 using System.Windows.Forms;
 using System.Xml;
-
 // using AcroPDFLib;
 
 using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Shared;
 using CrystalDecisions.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Controls;
-using ReportSmart.Network;
-using ReportSmart.Network.Email;
-using ReportSmart.Security;
-using ReportSmart.Special;
-using ReportSmart.Special.WinApi;
-using ReportSmart.Special.ActiveX.AcroPDF;
-
 using ReportSmart.Application;
 using ReportSmart.Documents;
 using ReportSmart.Engine;
+using ReportSmart.Network.Email;
+using ReportSmart.Security;
+using ReportSmart.Special;
+using ReportSmart.Special.ActiveX.AcroPDF;
+using ReportSmart.Special.WinApi;
 
-namespace ReportSmart.Controls {
-        internal enum TShowPage {
+namespace ReportSmart.Controls
+{
+    internal enum TShowPage {
                 spFirst = 0,
                 spPrev = 1,
                 spNext = 2,

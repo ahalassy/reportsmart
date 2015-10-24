@@ -29,14 +29,10 @@
 
 #endregion
 
-using System;
-using System.Collections;
-using System.IO;
-using System.Windows.Forms;
-using System.Xml;
 
-namespace ReportSmart.Documents.Collections {
-		public class CReportRootFolder: CReportFolder {
+namespace ReportSmart.Documents.Collections
+{
+    public class CReportRootFolder: CReportFolder {
 				public new RsReportCollection Collection {
 						get { return GetCollection(); }
 						set { SetCollection(value); }

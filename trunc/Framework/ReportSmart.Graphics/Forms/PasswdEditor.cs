@@ -31,12 +31,12 @@
 using System;
 using System.Collections;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
 
-namespace ReportSmart.Controls {
-		public class CPasswdEditorItem {
+namespace ReportSmart.Controls
+{
+    public class CPasswdEditorItem {
 				private CPasswdEditorItems _parent = null;
 				private int _IconIndex;
 				private string _Service, _Usr, _Passwd;

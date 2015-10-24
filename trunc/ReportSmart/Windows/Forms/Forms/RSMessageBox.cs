@@ -31,20 +31,15 @@
 
 using System;
 using System.Drawing;
-using System.Collections;
-using System.Windows;
 using System.Windows.Forms;
-
-using ReportSmart.Controls;
-using ReportSmart.Localization;
-
-using ReportSmart;
 using ReportSmart.Application;
 using ReportSmart.Engine;
- 
-namespace ReportSmart.Controls {
+using ReportSmart.Localization;
 
-		internal interface IRSStatusBox {
+namespace ReportSmart.Controls
+{
+
+    internal interface IRSStatusBox {
 				void SetMessage(string aMessage);
 				void SetStatus(int aStatus);
 				void HideBox();

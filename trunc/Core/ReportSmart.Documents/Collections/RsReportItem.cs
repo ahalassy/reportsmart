@@ -30,13 +30,12 @@
 #endregion
 
 using System;
-using System.Collections;
-using System.IO;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace ReportSmart.Documents.Collections {
-		public class CReportItem: IComparable {
+namespace ReportSmart.Documents.Collections
+{
+    public class CReportItem: IComparable {
 				private string _Name;
 				protected string _Type;
 				private TreeNode _Node;

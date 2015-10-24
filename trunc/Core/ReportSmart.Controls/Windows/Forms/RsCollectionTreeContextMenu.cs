@@ -30,19 +30,17 @@
 #endregion
 
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
-
-using ReportSmart;
 using ReportSmart.Localization;
 
-namespace ReportSmart.Windows.Forms {
-		/// <summary>
-		/// Description of RsCollectionTreeContextMenu.
-		/// </summary>
-		/// 
-		public partial class RsCollectionTree {
+namespace ReportSmart.Windows.Forms
+{
+    /// <summary>
+    /// Description of RsCollectionTreeContextMenu.
+    /// </summary>
+    /// 
+    public partial class RsCollectionTree {
 				internal class RsCollectionTreeContextMenuItem: MenuItem {
 				
 						public RsCollectionTreeContextMenu Owner { get; protected set; }

@@ -29,18 +29,15 @@
 
 #endregion
 
-using System;
- using System.IO;
- using System.Text;
- using System.Xml;
- using System.Xml.Serialization;
- using System.Xml.Schema;
- using System.Drawing;
- using System.Windows.Forms;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Serialization;
 
-namespace ReportSmart.Engine.Config {
+namespace ReportSmart.Engine.Config
+{
 
-		public class RsPathConfig {
+    public class RsPathConfig {
 				[XmlAttribute(AttributeName = "path", DataType = "string")]
 				public string Path;
 			}

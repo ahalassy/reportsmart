@@ -32,13 +32,12 @@
 using System;
 using System.Collections;
 using System.IO;
-using System.Xml;
 using System.Windows.Forms;
+using System.Xml;
 
-using ReportSmart;
-
-namespace ReportSmart.Localization {
-		public class ELocalization: Exception { public ELocalization(string aMessage): base(aMessage) {	}}
+namespace ReportSmart.Localization
+{
+    public class ELocalization: Exception { public ELocalization(string aMessage): base(aMessage) {	}}
 		
 		public class ELocalizationTag: Exception { public ELocalizationTag(string aMessage): base(aMessage) {	}}
 

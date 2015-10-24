@@ -31,19 +31,14 @@
 
 using System.Drawing;
 using System.Windows.Forms;
-
-using ReportSmart;
+using ReportSmart.Application;
 using ReportSmart.Controls;
 using ReportSmart.Forms;
 
-using ReportSmart.Application;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
-using ReportSmart.Windows.Forms;
- 
-namespace ReportSmart {
- 
-		partial class CReportSmartForm {		
+namespace ReportSmart
+{
+
+    partial class CReportSmartForm {		
 				protected void EH_SettingsClick(StripToolItem aSender) {
 						_ctlPageSelector.VisiblePage = _pgSettings;
 					}

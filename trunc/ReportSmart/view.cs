@@ -31,19 +31,17 @@
 
 using System;
 using System.Windows.Forms;
-
-using ReportSmart;
+using ReportSmart.Application;
+using ReportSmart.Controls;
 using ReportSmart.Special;
 using ReportSmart.Special.WinApi;
 
-using ReportSmart.Application;
-using ReportSmart.Controls;
-
-namespace ReportSmart {
-	/// <summary>
-	/// Class with program entry point.
-	/// </summary>
-	internal sealed class Program {
+namespace ReportSmart
+{
+    /// <summary>
+    /// Class with program entry point.
+    /// </summary>
+    internal sealed class Program {
 		#if DEMO
 		private const int _YM     = 140;
 		private const int _MM     =  38;

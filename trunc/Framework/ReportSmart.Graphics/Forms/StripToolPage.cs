@@ -28,20 +28,13 @@
 //*****************************************************************************
 
 #endregion
-using System;
 using System.Collections;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Drawing.Text;
-using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Controls;
-using ReportSmart.Graph;
 using ReportSmart.Graph.Drawing;
 
-namespace ReportSmart.Forms {
-		public class StripToolPage {
+namespace ReportSmart.Forms
+{
+    public class StripToolPage {
 				// Data members:
 				private string _Title;
 				private ArrayList _Groups;

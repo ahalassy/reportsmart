@@ -29,24 +29,17 @@
 
 #endregion
 
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Xml;
-
-using ReportSmart;
 using ReportSmart.Controls;
+using ReportSmart.Documents.Collections;
 using ReportSmart.Localization;
 
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
-using ReportSmart.Windows.Forms;
+namespace ReportSmart.Windows.Forms
+{
 
-namespace ReportSmart.Windows.Forms {
-
-	public delegate void NodeSelectedEvent(RsCollectionTree aSender, RsCollectionTreeNode aNode);
+    public delegate void NodeSelectedEvent(RsCollectionTree aSender, RsCollectionTreeNode aNode);
 
 	public delegate string NewNodeFolderEventHandler(RsCollectionTreeNode aSender);
 

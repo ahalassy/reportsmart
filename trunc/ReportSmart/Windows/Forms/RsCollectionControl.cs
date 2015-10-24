@@ -30,37 +30,16 @@
 #endregion
 
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Reflection;
-using System.Resources;
-using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
-
-using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Shared;
-
-using ReportSmart;
-using ReportSmart.Forms;
-using ReportSmart.Localization;
-using ReportSmart.Network;
-using ReportSmart.Network.Email;
-using ReportSmart.Security;
-using ReportSmart.Special;
-using ReportSmart.Special.WinApi;
-
 using ReportSmart.Application;
-using ReportSmart.Engine;
-using ReportSmart.Engine.Config;
-using ReportSmart.Controls; 
-using ReportSmart.Documents;
+using ReportSmart.Controls;
 using ReportSmart.Documents.Collections;
+using ReportSmart.Localization;
 
-namespace ReportSmart.Windows.Forms {
-		internal static class RsCollectionControl {
+namespace ReportSmart.Windows.Forms
+{
+    internal static class RsCollectionControl {
 				public static SaveFileDialog SaveCollectionDialog { get; private set; }
 				public static OpenFileDialog OpenCollectionDialog { get; private set; }
 				public static CdlgCreateCollection CreateCollectionDialog { get; private set; }

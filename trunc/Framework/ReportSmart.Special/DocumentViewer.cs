@@ -29,13 +29,11 @@
 
 #endregion
 
-using System;
-using System.Runtime.InteropServices;
-using System.Windows;
 using System.Windows.Forms;
 
-namespace ReportSmart.Special.DocumentView {
-		public abstract class CDocumentEngine {
+namespace ReportSmart.Special.DocumentView
+{
+    public abstract class CDocumentEngine {
 
 				private Control _DocControl;
 				

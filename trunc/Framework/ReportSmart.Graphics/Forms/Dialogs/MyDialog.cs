@@ -31,15 +31,13 @@
 
 using System;
 using System.Drawing;
-using System.Xml;
 using System.Windows.Forms;
-
-using ReportSmart;
-using ReportSmart.Controls;
+using System.Xml;
 using ReportSmart.Localization;
 
-namespace ReportSmart.Forms {
-		public abstract class CMyDialog: CLocalizedForm {
+namespace ReportSmart.Forms
+{
+    public abstract class CMyDialog: CLocalizedForm {
 				public static Font DefaultTitleFont { get; set; }
 				public static Font MessageFont { get; set; }
 				public static Icon ApplicationIcon { get; set; }

@@ -31,20 +31,14 @@
 
 using System;
 using System.Windows.Forms;
-
-using ReportSmart;
 using ReportSmart.Localization;
 
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
-using ReportSmart.Windows;
-using ReportSmart.Windows.Forms;
-
-namespace ReportSmart.Windows.Forms  {
-		/// <summary>
-		/// Description of RsCollectionManagement.
-		/// </summary>
-		public partial class RsCollectionManagement: Panel, ILocalizedControl {
+namespace ReportSmart.Windows.Forms
+{
+    /// <summary>
+    /// Description of RsCollectionManagement.
+    /// </summary>
+    public partial class RsCollectionManagement: Panel, ILocalizedControl {
 				
 				public CLocalization Localization { get; protected set; }
 		

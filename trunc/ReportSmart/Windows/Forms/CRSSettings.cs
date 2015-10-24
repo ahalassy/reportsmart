@@ -34,22 +34,15 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml;
-
-using ReportSmart;
-using ReportSmart.Controls;
-using ReportSmart.Localization;
-using ReportSmart.Network;
-using ReportSmart.Network.Email;
-using ReportSmart.Security;
-
 using ReportSmart.Application;
 using ReportSmart.Application.Defaults;
-using ReportSmart.Engine;
 using ReportSmart.Engine.Config;
+using ReportSmart.Localization;
 
-namespace ReportSmart.Controls {
-		
-		public class CRSSpecPanel: CSpecialPanel {
+namespace ReportSmart.Controls
+{
+
+    public class CRSSpecPanel: CSpecialPanel {
 				public override string GetInstanceName() { return this.Name; }
 		
 				public CRSSpecPanel(): base() {

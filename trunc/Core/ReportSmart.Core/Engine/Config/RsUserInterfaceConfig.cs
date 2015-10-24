@@ -29,16 +29,12 @@
 
 #endregion
 
-using System;
-using System.IO;
-using System.Text;
-using System.Xml;
 using System.Xml.Serialization;
- using System.Xml.Schema;
 
-namespace ReportSmart.Engine.Config {
-		
-		[XmlTypeAttribute(TypeName = "userinterface")]
+namespace ReportSmart.Engine.Config
+{
+
+    [XmlTypeAttribute(TypeName = "userinterface")]
 		public class RsUserInterfaceConfig {
 		
 				[XmlElementAttribute(ElementName = "window")]

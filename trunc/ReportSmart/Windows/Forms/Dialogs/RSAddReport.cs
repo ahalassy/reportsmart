@@ -32,18 +32,16 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Xml; 
-
-using ReportSmart;
+using System.Xml;
+using ReportSmart.Application;
 using ReportSmart.Localization;
 
-using ReportSmart.Application;
-
-namespace ReportSmart.Controls {
-		/// <summary>
-		/// Description of Form1.
-		/// </summary>
-		internal partial class CfAddReport: CLocalizedForm {
+namespace ReportSmart.Controls
+{
+    /// <summary>
+    /// Description of Form1.
+    /// </summary>
+    internal partial class CfAddReport: CLocalizedForm {
 				private string _CollName;
 				
 				public bool Modify;

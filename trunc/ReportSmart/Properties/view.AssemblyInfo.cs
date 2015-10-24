@@ -31,24 +31,8 @@
 #region Using directives
 
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-
-using ReportSmart;
 //using ReportSmart.Authorization;
-using ReportSmart.Classes;
-using ReportSmart.Controls;
-using ReportSmart.Forms;
-using ReportSmart.Graph;
-using ReportSmart.Graph.Drawing;
-using ReportSmart.Localization;
-using ReportSmart.Network;
-using ReportSmart.Network.Email;
-using ReportSmart.Special;
-using ReportSmart.Special.WinApi;
-using ReportSmart.Application;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
 
 #endregion
 

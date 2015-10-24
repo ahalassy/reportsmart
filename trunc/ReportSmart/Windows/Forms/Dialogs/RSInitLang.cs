@@ -30,21 +30,17 @@
 #endregion
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Windows.Forms;
-
-using ReportSmart.Localization;
- 
-using ReportSmart;
 using ReportSmart.Application;
+using ReportSmart.Localization;
 
-namespace ReportSmart.Controls {
-	/// <summary>
-	/// Description of Form1.
-	/// </summary>
-	internal partial class CRSInitLang : Form
+namespace ReportSmart.Controls
+{
+    /// <summary>
+    /// Description of Form1.
+    /// </summary>
+    internal partial class CRSInitLang : Form
 	{
 		public CRSInitLang()
 		{

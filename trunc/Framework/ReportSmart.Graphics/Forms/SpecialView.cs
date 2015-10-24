@@ -34,14 +34,13 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
 using System.Xml;
-
-using ReportSmart;
 using ReportSmart.Graph;
 using ReportSmart.Graph.Drawing;
 using ReportSmart.Localization;
- 
-namespace ReportSmart.Controls {
-		public delegate void SpecialPanelEventNotify(CSpecialPanel aSender);
+
+namespace ReportSmart.Controls
+{
+    public delegate void SpecialPanelEventNotify(CSpecialPanel aSender);
 
 		public class CSpecialPanelView: Panel {
 				private int _HeaderSize;

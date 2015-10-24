@@ -29,41 +29,16 @@
 
 #endregion
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Reflection;
-using System.Resources;
-using System.Threading;
-using System.Windows.Forms;
 using System.Xml;
-
-using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Shared;
-
-using ReportSmart;
-using ReportSmart.Forms;
 using ReportSmart.Localization;
-using ReportSmart.Network;
-using ReportSmart.Network.Email;
-using ReportSmart.Security;
-using ReportSmart.Special;
-using ReportSmart.Special.WinApi;
-
-using ReportSmart.Engine;
-using ReportSmart.Engine.Config;
-using ReportSmart.Controls;
-using ReportSmart.Documents;
-using ReportSmart.Documents.Collections;
 
 
-namespace ReportSmart.Application {
-		/// <summary>
-		/// Description of RsLocalization.
-		/// </summary>
-		internal class RsLocalization: CLocalization {
+namespace ReportSmart.Application
+{
+    /// <summary>
+    /// Description of RsLocalization.
+    /// </summary>
+    internal class RsLocalization: CLocalization {
 				public const string TAG_FAVORITES = "favorites";
 				public const string TAG_MANCOLLECTIONS = "manageCollections";
 				public const string TAG_SETTINGS = "settings";
